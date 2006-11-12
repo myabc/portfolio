@@ -1,0 +1,9 @@
+USER=alexbcoles
+APP=portfolio
+ROOT=/users/home/$USER/web
+TMP=/users/home/$USER/var/run
+ENV=production
+RAILS_ENV=$ENV
+
+spawn-fcgi -f $ROOT/public/dispatch.fcgi -s $TMP/$APP-0.socket -P $TMP/$APP-0.pid RAILS_ENV=$ENV
+spawn-fcgi -f $ROOT/public/dispatch.fcgi -s $TMP/$APP-1.socket -P $TMP/$APP-1.pid
