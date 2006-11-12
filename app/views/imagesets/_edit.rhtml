@@ -1,0 +1,18 @@
+<% @imageset = edit %>
+
+<li>
+	<div>
+		<input type="hidden" name="ord" value="<%= @imageset.ord %>"/>
+		<div>Title: <input type="text" name="title" value="<%= @imageset.title %>" /></div>
+		<div>Description: <textarea name="description"><%= @imageset.description %></textarea></div>
+
+		<div>Image:
+			<% @imageset.images.each do |image| %>
+					<%= link_to(image_tag(image.thumbnail_url,:alt=>image.name, :title=>image.name), image.name + "." +image.extension) %>
+			<% end %>
+			</div>
+	</div>
+</li>
+
+
+

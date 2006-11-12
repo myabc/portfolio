@@ -1,0 +1,28 @@
+<div id="content-col">
+
+<h1 id="clients-head">Clients</h1>
+
+<%= link_to 'New Client', { :action => 'new' }, :class => 'admin-action' %>
+
+<% for client in @clients %>
+
+	<h2><%= link_to client.name, :action => 'view', :id => client.id %>
+	<%= link_to 'Edit', { :action => 'edit', :id => client }, :class => 'admin-action' %>
+	</h2> 
+	
+	<ul>
+	<% for project in client.projects %>
+		<li><%= link_to project.name, 
+				:controller => 'projects',
+				:action => 'view',
+		 		:id => project.id %></li>
+	<% end %>
+	</ul>
+
+<% end %>
+
+
+<%= link_to 'Previous page', { :page => @client_pages.current.previous } if @client_pages.current.previous %>
+<%= link_to 'Next page', { :page => @client_pages.current.next } if @client_pages.current.next %> 
+
+</div>

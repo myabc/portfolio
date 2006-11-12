@@ -1,0 +1,11 @@
+--- 
+users_001: 
+  salt: 1fd19661cda8763ac62e4531e4d028f8d916ae06
+  updated_at: 2006-10-30 13:22:42
+  crypted_password: ec549034e20a623296461c361c6a5d5724856ddc
+  remember_token_expires_at: 
+  id: "1"
+  remember_token: 
+  login: alexbcoles
+  created_at: 2006-10-30 13:22:42
+  email: alexbcoles@mac.com

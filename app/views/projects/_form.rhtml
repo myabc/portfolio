@@ -1,0 +1,77 @@
+<p style="color: green"><%= flash[:notice] %></p> 
+
+<%= error_messages_for 'project' %>
+
+
+
+<div class="f-row">
+<label for="project_client_id">Client:</label>	
+<%= select("project", "client_id", @clients.collect {|p| [ p.name, p.id ] }, { :include_blank => false }) %>
+</div>
+
+
+<div class="f-dblrow">
+	<label for="project_name">Project Name:</label><br />
+	<input id="project_name" name="project[name]" size="30" type="text" value="<%= @project.name %>" class="x-large-input" />
+</div>
+
+<div class="f-row">
+	<label for="project_uri">URI:</label>
+	<input id="project_uri" name="project[uri]" value="<%= @project.uri %>" class="large-input" />	
+</div>
+
+<div class="f-row"><label for="start_date">Start:</label>
+	<%= date_select( "project", "start_date", 
+			{ :start_year => 1990,
+			 	} ) %></div>
+<div class="f-row"><label for="end_date">End:</label>
+	<%= date_select( "project", "end_date", 
+			{ :start_year => 1990,
+			 	} ) %></div>
+
+<div class="f-row">
+<label for="project_medium_id">Medium:</label>
+<%= select("project", "medium_id", Medium.find_all.collect {|p| [ p.name.capitalize, p.id ] }, { :include_blank => false }) %>
+</div>
+
+<div class="f-row">
+<label for="tag_list">Tags:</label>
+<%= text_field_tag 'tag_list', @project.tags.collect{|t| t.name}.join(" ") %>
+</div>
+
+<div class="f-dblrow">
+<label for="project_description">Description:</label><br/>
+<textarea cols="40" id="project_description" name="project[description]" 
+   rows="10" wrap="virtual"><%= @project.description %></textarea>
+</div>
+
+<fieldset>
+	<legend>Imagesets</legend>
+<div>
+<ul id="imageset-list">
+<!-- #render_collection_of_partials "imagesets/edit", @project.imagesets -->
+	<% for imageset in @project.imagesets %>
+		<li id="item_<%= imageset.ord %>"><div><%= imageset.title %>
+			
+		</div></li>
+	<% end %>
+</ul>
+
+<div id="imageset-info">
+
+</div>
+
+<hr/>
+	<div id="new-imageset">
+	<ul>
+	<%= render_partial "imagesets/edit", @project.imagesets.new %>
+	</ul>
+	</div>
+</div>
+</fieldset>
+
+<%= sortable_element('imageset-list', 
+	:update => 'imageset-info',
+	:complete => visual_effect(:highlight, 'imageset_list'),
+	:url => { :controller => 'imagesets', :action => 'update_positions'}) %>
+

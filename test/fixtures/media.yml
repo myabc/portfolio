@@ -1,0 +1,10 @@
+--- 
+media_001: 
+  name: web
+  id: "1"
+media_002: 
+  name: print
+  id: "2"
+media_003: 
+  name: video
+  id: "3"

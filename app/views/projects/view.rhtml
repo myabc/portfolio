@@ -1,0 +1,44 @@
+<div id="content-col">
+
+<div id="client-trail">
+<%= link_to @project.client.name, { :controller => "clients", :action => "view", :id => @project.client.id } %>
+</div>
+<h1><%= @project.name %></h1>
+
+<h2><%= link_to @project.uri, @project.uri %></h2>
+
+|<%= @project.medium.name %>|
+
+<% @project.start_date %>
+
+<!--
+<div>
+<%= @project.start_date %>
+<%= @project.end_date %>
+</div>
+-->
+
+<div>
+<%= @project.description %>
+</div>
+
+
+
+<div>
+<h2>Images</h2>
+<%= render_collection_of_partials "imagesets/view", @project.imagesets %>
+</div>
+
+<div id="right-col">
+	 fish
+	<ul>
+	<% for tag in @project.tags %>
+		<li title=""><%= tag.name %></li>
+	<% end %>
+	</ul>
+</div>
+
+<div id="clientInfo">
+	  <%= render :partial => 'clients/view' %>
+</div>
+

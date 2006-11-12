@@ -1,0 +1,100 @@
+--- 
+projects_007: 
+  status: "0"
+  end_date: 
+  start_date: 
+  name: Critical Language Awareness Course
+  uri: 
+  client_id: "3"
+  medium_id: "1"
+  id: "7"
+  description: 
+  media_type: "0"
+projects_008: 
+  status: "0"
+  end_date: 
+  start_date: 
+  name: Dutch Department Website
+  uri: http://www.ucl.ac.uk/dutch
+  client_id: "3"
+  medium_id: "1"
+  id: "8"
+  description: 
+  media_type: "0"
+projects_009: 
+  status: "0"
+  end_date: "2006-10-12"
+  start_date: "2006-10-12"
+  name: News Release System
+  uri: http://news.fws.gov
+  client_id: "5"
+  medium_id: "1"
+  id: "9"
+  description: ""
+  media_type: "0"
+projects_001: 
+  status: "0"
+  end_date: "2006-04-22"
+  start_date: "2001-10-10"
+  name: Digital Library System
+  uri: http://images.fws.gov/
+  client_id: "5"
+  medium_id: "1"
+  id: "1"
+  description: The U.S. Fish & Wildlife Service Digital library System
+  media_type: "0"
+projects_002: 
+  status: "0"
+  end_date: "2006-08-23"
+  start_date: "2006-08-23"
+  name: Alaska Region Website
+  uri: http://alaska.fws.gov
+  client_id: "1"
+  medium_id: "1"
+  id: "2"
+  description: ""
+  media_type: "0"
+projects_003: 
+  status: "0"
+  end_date: 
+  start_date: "0000-00-00"
+  name: Alaska Region Redesign II
+  uri: http://alaska.fws.gov/
+  client_id: "1"
+  medium_id: "1"
+  id: "3"
+  description: 
+  media_type: "0"
+projects_004: 
+  status: "0"
+  end_date: "2001-04-23"
+  start_date: "2001-04-23"
+  name: Shorebird Sister Schools Program
+  uri: ""
+  client_id: "1"
+  medium_id: "1"
+  id: "4"
+  description: ""
+  media_type: "0"
+projects_005: 
+  status: "0"
+  end_date: "2006-10-12"
+  start_date: "2006-10-12"
+  name: External Affairs
+  uri: ""
+  client_id: "1"
+  medium_id: "1"
+  id: "5"
+  description: Design of the Extenrla Affairs User Interface.
+  media_type: "0"
+projects_006: 
+  status: "0"
+  end_date: 
+  start_date: 
+  name: Law Enforcement
+  uri: 
+  client_id: "1"
+  medium_id: "1"
+  id: "6"
+  description: 
+  media_type: "0"

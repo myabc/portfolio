@@ -1,0 +1,163 @@
+body 
+{
+	background-color: #dddddd;
+	text-align: center; /* IE hack */
+}
+
+
+#page
+{
+	background-color: #ffffff;
+	margin: 0 auto;
+	width: 960px;
+	text-align: left;
+}
+
+#content-col {
+	margin-rgiht: 200px;
+}
+#right-col {
+	float: left;
+	width: 200px;
+	margin-left: -200px;
+	background: #fD39FE;
+}
+
+#client-trail {
+	font-size: 1em;
+}
+#client-trail a { text-decoration:none;}
+
+#masthead
+{
+	background: #ffffff url(/i/hd-banner.gif) top no-repeat;
+	height: 80px;
+}
+#masthead h2 { text-indent: -9999px; }
+
+ul#mast-menu
+{
+	font: large  "Times New Roman", serif;
+	list-style-type: none;
+	text-align: right;
+}
+ul#mast-menu li {  display: inline; }
+ul#mast-menu li a {  }
+
+#footer
+{
+	clear: left;
+	font: small Arial, Helvetica, sans-serif;
+}
+
+#clientInfo
+{
+	background-color: #eeeecc;
+}
+#clientInfo h2
+{
+	font-weight: normal;
+}
+
+/*
+	# Headings
+*/
+h1,h2,h3,h4,h5 { 
+	font-family: Times, "Times New Roman", serif; 
+	font-weight: normal;
+}
+
+/*
+	Links
+*/
+a 		{ color: #333333; text-decoration: none; }
+a:link 	{ }
+a:visited { color: #666666; }
+a:hover, 
+a:active { color: #990066; text-decoration: underline; }
+
+/*
+	# Forms
+*/
+input.x-large-input { font-family: Times, "Times New Roman", serif; font-size: 20px; }
+input.large-input { font-size: 16px; }
+
+div.f-row,
+div.f-dblrow {
+	color: #000099;
+	font: 0.825em Arial, Helvetica, sans-serif; 
+}
+
+div.f-row label { 
+	display: inline-block; 
+	width: 100px;
+	text-align: right;
+}
+div.f-dblrow {
+	background-color: #ccffcc;
+}
+div.f-dblrow label {
+	margin-left: 50px;
+	vertical-align: middle;
+}
+div.f-dblrow input, 
+div.f-dblrow textarea {
+	margin-left: 50px;
+}
+
+/*
+	# Lists
+*/
+.horizontal { list-style-type: none; }
+.horizontal li { display: inline; }
+
+/*
+	# Specific Items
+	*/
+div#media-list,
+div#tag-list {
+	width: 100%;
+	min-height: 50px;
+	margin: 0;
+}
+div#media-list h3,
+div#tag-list h3 {
+	float: left;
+	margin: 0;
+	text-transform: lowercase;
+	width: 200px;
+}
+
+div#media-list { background-color: #99CC66; }
+div#tag-list { background-color: #6699cc; }
+div#tag-list a {  }
+div#tag-list a { border: 1px solid #000000; padding: 1px;}
+
+
+a.admin-action { 
+	background-color: #999999;
+	color: #ffffff;
+	font-size: 0.825em;
+	padding: 0 2px 0 2px;
+	text-transform: lowercase;
+}
+a.admin-action:hover { background-color: #990066; }
+
+/*
+	Image Replacement Headers
+*/
+h1#clients-head,
+h1#projects-head,
+h1#resume-head,
+h1#contact-head {
+	margin: 10px 0 0 0;
+	padding: 0;
+	text-indent: -9999px;
+	width: 200px;
+	height: 50px;
+}
+
+h1#clients-head 	{ background: url(/i/clients-hd.gif) top left no-repeat; }
+h1#projects-head 	{ background: url(/i/projects-hd.gif) top left no-repeat; }
+h1#resume-head 		{ background: url(/i/resume-hd.gif)  top left no-repeat; }
+h1#contact-head 	{ background: url(/i/contact-hd.gif) top left no-repeat; }

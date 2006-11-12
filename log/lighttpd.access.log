@@ -1,0 +1,2 @@
+127.0.0.1 0.0.0.0:3000 - [09/Aug/2006:23:48:05 -0800] "GET / HTTP/1.1" 500 369 "-" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit/418.8 (KHTML, like Gecko) Safari/419.3"
+127.0.0.1 0.0.0.0:3000 - [09/Aug/2006:23:48:05 -0800] "GET /favicon.ico HTTP/1.1" 200 0 "-" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit/418.8 (KHTML, like Gecko) Safari/419.3"

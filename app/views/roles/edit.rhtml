@@ -1,0 +1,10 @@
+<h1>Editing role</h1>
+
+<%= start_form_tag :action => 'edit', :id => @role %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Save' %>
+<%= end_form_tag %>
+<%= button_to 'Destroy', { :action => 'destroy', :id => @role }, :confirm => 'Are you sure you want to destroy this role?' %>
+
+<%= link_to 'Show', :action => 'show', :id => @role %> |
+<%= link_to 'Back to list', :action => 'list' %>

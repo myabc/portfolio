@@ -1,0 +1,14 @@
+<% form_for :image, @image,
+	:url => { :action => 'update', :id => @image.id },
+	:html => { :multipart => true } do |f| %>
+	
+	<label for='image_name'>Name:</label>
+	<%= f.text_field :name%><br/>
+	<label for='image_file_data'>Image File:</label>
+	<%= f.file_field :file_data %><br />
+	<label for='image_caption'>Caption:</label><br />
+	<%= f.text_area :caption, :cols => 80, :rows => 5 %><br />
+
+	<%= submit_tag "Save" %>
+
+<% end %>

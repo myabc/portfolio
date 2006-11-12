@@ -1,0 +1,11 @@
+<% @imageset = view %>
+
+<div class="imageset">
+	<h4><%= @imageset.title %></h4>
+	<%= @imageset.description %>
+
+	<% for image in @imageset.images %>
+	<%= link_to(image_tag(image.thumbnail_url,:alt=>image.name, :title=>image.name), image.name + "." +image.extension) %>
+	<% end %>
+	
+</div>

@@ -1,0 +1,8 @@
+<% for column in Medium.content_columns %>
+<p>
+  <b><%= column.human_name %>:</b> <%= h @medium.send(column.name) %>
+</p>
+<% end %>
+
+<%= link_to 'Edit', :action => 'edit', :id => @medium %> |
+<%= link_to 'Back to list', :action => 'list' %>

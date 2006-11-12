@@ -1,0 +1,37 @@
+--- 
+clients_001: 
+  name: "U.S. Fish & Wildlife Service : Alaska Region"
+  id: "1"
+  description: |-
+    The U.S. Fish & Wildlife Service is fundamentally a fish and wildlife oriented, biologically based organization, committed to the conservation of the natural resources placed in its trust.
+    
+    The Alaska Region has 500 employees, mostly based out of Anchoroage, AK.
+  client_uri: http://alaska.fws.gov/
+  short_name: usfws
+clients_002: 
+  name: Transgender Legal Education & Defense Fund, Inc.
+  id: "2"
+  description: Transgender Legal Defense & Education Fund, Inc. is a national nonprofit civil rights organization committed to ending discrimination based upon gender identity and expression and to achieving equality for transgender people through public education, test-case litigation, direct legal services, community organizing and public policy efforts.
+  client_uri: http://www.transgenderlegal.org/
+  short_name: TLDEF
+clients_003: 
+  name: University College London Dutch Department
+  id: "3"
+  description: UCL houses the largest Centre for Dutch Studies in the English-speaking world. The department, founded in 1919, was the first of its kind in the United Kingdom. Today it offers a full range of undergraduate and graduate degree programmes and is an acknowledged centre of excellence in both teaching and research in the field of Low Countries language and culture.
+  client_uri: http://www.ucl.ac.uk/dutch/
+  short_name: UCL_Dutch
+clients_004: 
+  name: University College London Union
+  id: "4"
+  description: ""
+  client_uri: http://www.uclunion.org/
+  short_name: UCLU
+clients_005: 
+  name: "U.S. Fish & Wildlife Service : National"
+  id: "5"
+  description: |-
+    The stated mission of the U.S. Fish and Wildlife Service:
+    
+    The U.S. Fish and Wildlife Service's mission is, working with others, to conserve, protect and enhance fish, wildlife, and plants and their habitats for the continuing benefit of the American people.
+  client_uri: http://www.fws.gov/
+  short_name: FWSNational

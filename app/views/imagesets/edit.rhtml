@@ -1,0 +1,34 @@
+<% form_for :imageset, @imageset, :url=> {:action => 'update', :id=>@imageset}, :html=>{:multipart=>true} do |f| %>
+
+Set Title:
+<%= f.text_field :title %><br/>
+Description:
+<%= f.text_area :description %><br/>
+
+	<% if @imageset.images.any? %>
+	<div id='existing-images' class='section'>
+	  <h2><%= pluralize(@imageset.images.size, "Image") %></h2>
+		<p>[ <%= link_to("Destroy All",:action=>'clean') %> ]</p>
+		<% @imageset.images.each_with_index do |image,index| %>
+		  
+		<li><%= image.extension %></li>
+		
+		<% end %>
+	</div>
+	<% end %>	
+	
+	<div id='new-image' class='section'>
+		<h2>Add Image</h2>
+		<% form_for :image, @image, :url=> {:action => 'create'}, :html=>{:multipart=>true} do |i| %>
+			<label for='image_name'>Name:</label>
+			<%= i.text_field :name %><br/>
+			<label for='image_file_data'>Image File:</label>
+			<%= i.file_field :file_data %><br/>
+			<label for='image_caption'>Description:</label><br/>
+			<%= i.text_area :caption, :cols => 80, :rows => 5 %><br/>
+			<%= submit_tag "Save" %>
+		<% end %>
+	</div>
+
+	<%= submit_tag "Save" %>
+<% end %>

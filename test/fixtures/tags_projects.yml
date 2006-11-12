@@ -1,0 +1,22 @@
+--- 
+tags_projects_005: 
+  project_id: "1"
+  tag_id: "9"
+tags_projects_006: 
+  project_id: "2"
+  tag_id: "9"
+tags_projects_007: 
+  project_id: "3"
+  tag_id: "9"
+tags_projects_001: 
+  project_id: "2"
+  tag_id: "3"
+tags_projects_002: 
+  project_id: "1"
+  tag_id: "3"
+tags_projects_003: 
+  project_id: "3"
+  tag_id: "3"
+tags_projects_004: 
+  project_id: "1"
+  tag_id: "7"

@@ -1,0 +1,1395 @@
+Migrating to CreateClients (1)
+Migrating to CreateProjects (2)
+Migrating to CreateImagesets (4)
+Migrating to CreateImages (5)
+Migrating to AddTagSupport (6)
+Migrating to AddUserTable (7)
+Migrating to AddRolesAndRightsTables (11)
+Migrating to AddSessions (12)
+Migrating to CreateMedia (13)
+Migrating to CreateUsers (14)
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 13:54:17) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 13:54:22) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 13:54:30) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+undefined method `downcase' for nil:NilClass
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/request.rb:18:in `method'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:933:in `log_processing'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:407:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+/usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+/usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:594:in `each_cgi'
+/usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+/usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+/users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 13:58:02) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 13:58:05) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 14:05:26) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing Base#index (for 208.54.95.129 at 2006-11-02 14:05:46) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {}
+
+
+ActionController::RoutingError (Recognition failed for "/index_new.html"):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:522:in `recognition_failed'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:512:in `recognize!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ImagesController#rails.png (for 208.54.95.129 at 2006-11-02 14:06:06) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"rails.png", "controller"=>"images"}
+Redirected to http://www.alexcolesportfolio.com:8264/account/login
+Filter chain halted as [login_required] returned false
+Completed in 0.04159 (24 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://www.alexcolesportfolio.com/images/rails.png]
+
+
+Processing AccountController#login (for 208.54.95.129 at 2006-11-02 14:06:07) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"login", "controller"=>"account"}
+Rendering  within layouts/application
+Rendering account/login
+Completed in 0.03081 (32 reqs/sec) | Rendering: 0.02980 (96%) | DB: 0.00000 (0%) | 200 OK [http://www.alexcolesportfolio.com/account/login]
+
+
+Processing Base#index (for 208.54.95.129 at 2006-11-02 14:06:33) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {}
+
+
+ActionController::RoutingError (Recognition failed for "/dispatch.fcgi"):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:522:in `recognition_failed'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:512:in `recognize!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing Base#index (for 208.54.95.129 at 2006-11-02 14:06:46) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {}
+
+
+ActionController::RoutingError (Recognition failed for "/dispatch.fcgi/portfolio/"):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:522:in `recognition_failed'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:512:in `recognize!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing Base#index (for 208.54.95.129 at 2006-11-02 14:06:51) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {}
+
+
+ActionController::RoutingError (Recognition failed for "/portfolio/"):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:522:in `recognition_failed'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:512:in `recognize!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 14:06:54) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 14:07:39) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 14:07:40) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 14:07:43) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 14:08:04) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 14:08:08) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing Base#index (for 208.54.95.129 at 2006-11-02 14:09:43) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {}
+
+
+ActionController::RoutingError (Recognition failed for "/dispatch.fcgi/portfolio/"):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:522:in `recognition_failed'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:512:in `recognize!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing Base#index (for 208.54.95.129 at 2006-11-02 14:09:46) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {}
+
+
+ActionController::RoutingError (Recognition failed for "/dispatch.fcgi"):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:522:in `recognition_failed'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:512:in `recognize!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing Base#index (for 208.54.95.129 at 2006-11-02 14:10:22) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {}
+
+
+ActionController::RoutingError (Recognition failed for "/dispatch.fcgi"):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:522:in `recognition_failed'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:512:in `recognize!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing Base#index (for 208.54.95.129 at 2006-11-02 14:10:23) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {}
+
+
+ActionController::RoutingError (Recognition failed for "/dispatch.fcgi"):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:522:in `recognition_failed'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:512:in `recognize!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing Base#index (for 208.54.95.129 at 2006-11-02 14:10:38) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {}
+
+
+ActionController::RoutingError (Recognition failed for "/dispatch.fcgi"):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:522:in `recognition_failed'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:512:in `recognize!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing Base#index (for 208.54.95.129 at 2006-11-02 14:10:40) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {}
+
+
+ActionController::RoutingError (Recognition failed for "/dispatch.fcgi"):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:522:in `recognition_failed'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:512:in `recognize!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 14:10:46) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 14:19:39) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing Base#index (for 208.54.95.129 at 2006-11-02 14:19:45) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {}
+
+
+ActionController::RoutingError (Recognition failed for "/portfolio/"):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:522:in `recognition_failed'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:512:in `recognize!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing Base#index (for 208.54.95.129 at 2006-11-02 14:19:49) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {}
+
+
+ActionController::RoutingError (Recognition failed for "/portfolio/dispatch.fcgi"):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:522:in `recognition_failed'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:512:in `recognize!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing Base#list (for 208.54.95.129 at 2006-11-02 14:20:03) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"list", "controller"=>"projects"}
+
+
+ActionController::RoutingError (Recognition failed for "/portfolio/dispatch.fcgi"):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:522:in `recognition_failed'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:512:in `recognize!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing Base#list (for 208.54.95.129 at 2006-11-02 14:20:06) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"list", "controller"=>"projects"}
+
+
+ActionController::RoutingError (Recognition failed for "/dispatch.fcgi"):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:522:in `recognition_failed'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/routing.rb:512:in `recognize!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 14:22:28) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 14:22:30) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 14:25:23) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 14:26:38) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 14:27:56) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 14:30:03) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 14:30:34) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#list (for 208.54.95.129 at 2006-11-02 14:39:19) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"list", "controller"=>"projects"}
+Rendering  within layouts/application
+Rendering projects/list
+Completed in 0.08980 (11 reqs/sec) | Rendering: 0.03934 (43%) | DB: 0.02820 (31%) | 200 OK [http://www.alexcolesportfolio.com/projects/list]
+
+
+Processing ProjectsController#list (for 24.185.3.177 at 2006-11-02 14:40:16) [GET]
+  Session ID: 5085045b967959900f3e375c38cd8cb3
+  Parameters: {"action"=>"list", "controller"=>"projects"}
+Rendering  within layouts/application
+Rendering projects/list
+Completed in 0.00259 (385 reqs/sec) | Rendering: 0.00116 (44%) | DB: 0.00051 (19%) | 200 OK [http://www.alexcolesportfolio.com/projects/list]
+
+
+Processing ProjectsController#new (for 24.185.3.177 at 2006-11-02 14:40:46) [GET]
+  Session ID: 5085045b967959900f3e375c38cd8cb3
+  Parameters: {"action"=>"new", "controller"=>"projects"}
+
+
+NameError (undefined local variable or method `render_scaffold' for #<ProjectsController:0x8f2407c>):
+    /app/controllers/projects_controller.rb:28:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:941:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#list (for 208.54.95.129 at 2006-11-02 14:42:41) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"list", "controller"=>"projects"}
+Rendering  within layouts/application
+Rendering projects/list
+Completed in 0.00259 (386 reqs/sec) | Rendering: 0.00107 (41%) | DB: 0.00069 (26%) | 200 OK [http://www.alexcolesportfolio.com/projects/list]
+
+
+Processing ProjectsController#list (for 208.54.95.129 at 2006-11-02 14:45:58) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"list", "controller"=>"projects"}
+Rendering  within layouts/application
+Rendering projects/list
+Completed in 0.00213 (469 reqs/sec) | Rendering: 0.00099 (46%) | DB: 0.00039 (18%) | 200 OK [http://www.alexcolesportfolio.com/projects/list]
+
+
+Processing ProjectsController#list (for 208.54.95.129 at 2006-11-02 14:46:02) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"list", "controller"=>"projects"}
+Rendering  within layouts/application
+Rendering projects/list
+Completed in 0.07357 (13 reqs/sec) | Rendering: 0.00112 (1%) | DB: 0.07124 (96%) | 200 OK [http://www.alexcolesportfolio.com/projects/list]
+
+
+Processing ProjectsController#list (for 208.54.95.129 at 2006-11-02 14:46:06) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"list", "controller"=>"projects"}
+Rendering  within layouts/application
+Rendering projects/list
+Completed in 0.09445 (10 reqs/sec) | Rendering: 0.00122 (1%) | DB: 0.03812 (40%) | 200 OK [http://www.alexcolesportfolio.com/projects/list]
+
+
+Processing ProjectsController#new (for 208.54.95.129 at 2006-11-02 14:46:46) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"new", "controller"=>"projects"}
+
+
+NameError (undefined local variable or method `render_scaffold' for #<ProjectsController:0x8ee4a58>):
+    /app/controllers/projects_controller.rb:28:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:941:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#list (for 208.54.95.129 at 2006-11-02 14:47:15) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"list", "controller"=>"projects"}
+Rendering  within layouts/application
+Rendering projects/list
+Completed in 0.00302 (331 reqs/sec) | Rendering: 0.00133 (44%) | DB: 0.00059 (19%) | 200 OK [http://www.alexcolesportfolio.com/projects/list]
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 14:47:17) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#list (for 208.54.95.129 at 2006-11-02 14:50:31) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"list", "controller"=>"projects"}
+Rendering  within layouts/application
+Rendering projects/list
+Completed in 0.00238 (420 reqs/sec) | Rendering: 0.00109 (45%) | DB: 0.00046 (19%) | 200 OK [http://www.alexcolesportfolio.com/projects/list]
+
+
+Processing ProjectsController#new (for 208.54.95.129 at 2006-11-02 14:50:43) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"new", "controller"=>"projects"}
+
+
+NameError (undefined local variable or method `render_scaffold' for #<ProjectsController:0x8eb8de0>):
+    /app/controllers/projects_controller.rb:28:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:941:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 14:50:48) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#list (for 208.54.95.129 at 2006-11-02 14:53:02) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"list", "controller"=>"projects"}
+Rendering  within layouts/application
+Rendering projects/list
+Completed in 0.00233 (428 reqs/sec) | Rendering: 0.00109 (46%) | DB: 0.00044 (18%) | 200 OK [http://www.alexcolesportfolio.com/projects/list]
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 14:56:26) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 15:01:43) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 15:02:14) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 16:12:24) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#index (for 208.54.95.129 at 2006-11-02 16:12:30) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ProjectsController#list (for 208.54.95.129 at 2006-11-02 16:12:32) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"list", "controller"=>"projects"}
+Rendering  within layouts/application
+Rendering projects/list
+Completed in 0.88355 (1 reqs/sec) | Rendering: 0.65083 (73%) | DB: 0.08400 (9%) | 200 OK [http://www.alexcolesportfolio.com/projects/list/]
+
+
+Processing ProjectsController#list (for 208.54.95.129 at 2006-11-02 16:12:37) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"list", "controller"=>"projects"}
+Rendering  within layouts/application
+Rendering projects/list
+Completed in 0.05210 (19 reqs/sec) | Rendering: 0.01631 (31%) | DB: 0.00552 (10%) | 200 OK [http://www.alexcolesportfolio.com/projects/list/]
+
+
+Processing ProjectsController#list (for 208.54.95.129 at 2006-11-02 16:14:13) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"list", "id"=>"all ", "controller"=>"projects"}
+
+
+NoMethodError (undefined method `tagged' for nil:NilClass):
+    /app/controllers/projects_controller.rb:12:in `list'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:941:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ImagesController#new (for 208.54.95.129 at 2006-11-02 16:18:07) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"new", "controller"=>"images"}
+Redirected to http://www.alexcolesportfolio.com/account/login
+Filter chain halted as [login_required] returned false
+Completed in 0.31487 (3 reqs/sec) | DB: 0.04672 (14%) | 302 Found [http://www.alexcolesportfolio.com/images/new/]
+
+
+Processing AccountController#login (for 208.54.95.129 at 2006-11-02 16:18:08) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"login", "controller"=>"account"}
+Rendering  within layouts/application
+Rendering account/login
+Completed in 0.10482 (9 reqs/sec) | Rendering: 0.05406 (51%) | DB: 0.00000 (0%) | 200 OK [http://www.alexcolesportfolio.com/account/login]
+
+
+Processing AccountController#create (for 208.54.95.129 at 2006-11-02 16:18:13) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"create", "controller"=>"account"}
+
+
+ActionController::UnknownAction (No action responded to create):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing AccountController#signup (for 208.54.95.129 at 2006-11-02 16:18:21) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"signup", "controller"=>"account"}
+Rendering  within layouts/application
+Rendering account/signup
+Completed in 0.13095 (7 reqs/sec) | Rendering: 0.10385 (79%) | DB: 0.01515 (11%) | 200 OK [http://www.alexcolesportfolio.com/account/signup]
+
+
+Processing AccountController#signup (for 208.54.95.129 at 2006-11-02 16:18:32) [POST]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"user"=>{"password_confirmation"=>"Hesse4T01", "login"=>"alexbcoles", "password"=>"Hesse4T01", "email"=>"alexbcoles@mac.com"}, "commit"=>"Sign up", "action"=>"signup", "controller"=>"account"}
+Redirected to http://www.alexcolesportfolio.com/images/new/
+Completed in 0.10281 (9 reqs/sec) | DB: 0.02222 (21%) | 302 Found [http://www.alexcolesportfolio.com/account/signup]
+
+
+Processing ImagesController#new (for 208.54.95.129 at 2006-11-02 16:18:32) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"new", "controller"=>"images"}
+Rendering  within layouts/application
+Rendering images/new
+Completed in 1.00792 (0 reqs/sec) | Rendering: 0.07748 (7%) | DB: 0.01462 (1%) | 200 OK [http://www.alexcolesportfolio.com/images/new/]
+
+
+Processing ImagesetsController#new (for 208.54.95.129 at 2006-11-02 16:18:48) [GET]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"action"=>"new", "controller"=>"imagesets"}
+Rendering layouts/application
+Completed in 2.76717 (0 reqs/sec) | DB: 0.01638 (0%) | 200 OK [http://www.alexcolesportfolio.com/imagesets/new/]
+
+
+Processing ImagesetsController#create (for 208.54.95.129 at 2006-11-02 16:19:02) [POST]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"commit"=>"Create", "action"=>"create", "controller"=>"imagesets", "imageset"=>{"ord"=>"0", "title"=>"Library Interface Design", "description"=>""}}
+
+
+NameError (undefined local variable or method `position' for #<Imageset:0x9017394>):
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.14.4/lib/active_record/base.rb:1792:in `method_missing'
+    /app/models/imageset.rb:10:in `validate'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.14.4/lib/active_record/validations.rb:765:in `valid_without_callbacks'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.14.4/lib/active_record/callbacks.rb:310:in `valid?'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.14.4/lib/active_record/validations.rb:735:in `save_without_transactions'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.14.4/lib/active_record/transactions.rb:126:in `save'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.14.4/lib/active_record/connection_adapters/abstract/database_statements.rb:51:in `transaction'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.14.4/lib/active_record/transactions.rb:91:in `transaction'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.14.4/lib/active_record/transactions.rb:118:in `transaction'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.14.4/lib/active_record/transactions.rb:126:in `save'
+    /app/controllers/imagesets_controller.rb:20:in `create'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:941:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+
+
+
+Processing ImagesetsController#create (for 208.54.95.129 at 2006-11-02 16:19:06) [POST]
+  Session ID: 1b1456042864c3dcb7a9622df18a16e9
+  Parameters: {"commit"=>"Create", "action"=>"create", "controller"=>"imagesets", "imageset"=>{"ord"=>"1", "title"=>"Library Interface Design", "description"=>""}}
+
+
+NameError (undefined local variable or method `position' for #<Imageset:0x900084c>):
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.14.4/lib/active_record/base.rb:1792:in `method_missing'
+    /app/models/imageset.rb:10:in `validate'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.14.4/lib/active_record/validations.rb:765:in `valid_without_callbacks'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.14.4/lib/active_record/callbacks.rb:310:in `valid?'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.14.4/lib/active_record/validations.rb:735:in `save_without_transactions'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.14.4/lib/active_record/transactions.rb:126:in `save'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.14.4/lib/active_record/connection_adapters/abstract/database_statements.rb:51:in `transaction'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.14.4/lib/active_record/transactions.rb:91:in `transaction'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.14.4/lib/active_record/transactions.rb:118:in `transaction'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.14.4/lib/active_record/transactions.rb:126:in `save'
+    /app/controllers/imagesets_controller.rb:20:in `create'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:941:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:368:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/benchmarking.rb:69:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/rescue.rb:82:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/base.rb:408:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/filters.rb:377:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.12.5/lib/action_controller/session_management.rb:117:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:150:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:54:in `process!'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:600:in `each_cgi'
+    /usr/local/lib/ruby/site_ruby/1.8/fcgi.rb:597:in `each_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:53:in `process!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.1.6/lib/fcgi_handler.rb:23:in `process!'
+    /users/home/alexbcoles/web/public/dispatch.fcgi:24
+
+

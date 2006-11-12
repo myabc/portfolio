@@ -1,0 +1,23 @@
+<p style="color: green"><%= flash[:notice] %></p> 
+
+<%= error_messages_for 'client' %>
+
+<!--[form:client]-->
+<div class="f-dblrow">
+	<label for="client_name">Name:</label>
+	<div><%= text_field 'client', 'name', :class => 'x-large-input' %></div></div>
+
+<div class="f-row">
+	<label for="client_short_name">Short Name:</label>
+	<%= text_field 'client', 'short_name', :class => 'large-input' %></div>
+
+<div class="f-row">
+	<label for="client_client_uri">Client URI:</label>
+	<%= text_field 'client', 'client_uri', :class => 'large-input' %></div>
+
+<div class="f-dblrow">
+	<label for="client_description">Description:</label><br />
+	<%= text_area 'client', 'description'  %></div>
+
+<!--[eoform:client]-->
+

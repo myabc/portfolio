@@ -1,0 +1,30 @@
+<%= javascript_include_tag 'prototype.js' %>
+<%= javascript_include_tag 'effects.js' %>
+<%= javascript_include_tag 'dragdrop.js' %>
+
+<style type="text/css">
+#sortable_list {
+margin:0;
+margin-top:10px;
+padding:0;
+list-style-type: none;
+width:250px;
+}
+#sortable_list li {
+margin:0;
+margin-bottom:4px;
+padding:5px;
+border:1px solid #888;
+cursor:move;
+}
+</style>
+
+
+<h1>Edit Project</h1>
+
+<%= link_to 'Back', { :action => 'list' }, :class => 'admin-action' %>
+
+<%= start_form_tag :action => 'edit', :id => @project %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag "Save" %>
+<%= end_form_tag %>

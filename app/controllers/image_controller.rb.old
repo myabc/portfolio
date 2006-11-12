@@ -1,0 +1,31 @@
+class ImageController < ApplicationController
+  
+  def do_upload_image
+    
+    image_types = ["image/jpeg", "image/pjpeg", "image/gif", "image/png", "image/x-png"]
+    
+    @recipe = Recipe.find(params[:id])
+    @recipe.update_attributes(params[:recipe])
+    logger.info "@recipe.file = " + @recipe.file.to_s
+    if !@recipe.file.blank?
+      if (@recipe.file.size != 0)
+        logger.info "content_type =" + @recipe.file.content_type.to_s
+        logger.info "size = " + @recipe.file.size.to_s
+        if (image.types.include?@recipe.file.content_type.chomp)
+          
+          
+        else
+          flash.now["notice"]
+        end
+      else
+        flash.now[:error] = "Unable to upload the file you selected, please try again."
+        render :action => 'upload_image', :id => @recipe
+      end
+    else
+      flash.now[:error] = "unable to upload the file you selected, please try again."
+      render :action => 'upload_image', :id => @recipe
+    end
+    
+  end
+  
+end class

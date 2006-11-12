@@ -1,0 +1,19 @@
+
+Standard User
+-------------
+
+Projects	List	List Projects
+Projects	View	View Project
+Clients		List	List Clients
+
+
+Admin User
+----------
+
+Projects	List	List Projects
+Projects	View	View Project
+Projects	Edit	Edit Project	6
+Projects	New		New Project		7
+Clients		List	List Clients
+Clients		Edit	Edit Client		4
+Clients		New		New Client		5

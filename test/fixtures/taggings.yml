@@ -1,0 +1,41 @@
+--- 
+taggings_003: 
+  tag_id: "22"
+  id: "21"
+  taggable_type: Project
+  taggable_id: "1"
+taggings_004: 
+  tag_id: "23"
+  id: "22"
+  taggable_type: Project
+  taggable_id: "1"
+taggings_005: 
+  tag_id: "3"
+  id: "23"
+  taggable_type: Project
+  taggable_id: "2"
+taggings_006: 
+  tag_id: "22"
+  id: "24"
+  taggable_type: Project
+  taggable_id: "2"
+taggings_007: 
+  tag_id: "22"
+  id: "25"
+  taggable_type: Project
+  taggable_id: "2"
+taggings_008: 
+  tag_id: "23"
+  id: "26"
+  taggable_type: Project
+  taggable_id: "2"
+taggings_001: 
+  tag_id: "3"
+  id: "19"
+  taggable_type: Project
+  taggable_id: "1"
+taggings_002: 
+  tag_id: "22"
+  id: "20"
+  taggable_type: Project
+  taggable_id: "1"

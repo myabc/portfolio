@@ -1,0 +1,15 @@
+
+<%= form_tag_with_upload_progress({:action => 'upload'}, {
+	:begin => "new Effect.Appear('status')",
+	:finish => "$('message').innerHTML = arguments[0]" }) %>
+
+<%= file_field 'document', 'file' %>
+<%= submit_tag 'Upload' %>
+
+<div id="status" style="display:none">
+	<%= upload_status_tag %>
+</div>
+
+<div id="message"><%= @message %></div>
+
+<%= end_form_tag %>

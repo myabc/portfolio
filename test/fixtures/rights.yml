@@ -1,0 +1,61 @@
+--- 
+rights_003: 
+  name: List Clients
+  action: list
+  id: "3"
+  controller: clients
+rights_004: 
+  name: Edit Client
+  action: edit
+  id: "4"
+  controller: clients
+rights_005: 
+  name: New Client
+  action: new
+  id: "5"
+  controller: clients
+rights_006: 
+  name: Edit Project
+  action: edit
+  id: "6"
+  controller: projects
+rights_007: 
+  name: New Project
+  action: new
+  id: "7"
+  controller: projects
+rights_008: 
+  name: Users
+  action: "*"
+  id: "8"
+  controller: users
+rights_009: 
+  name: Roles
+  action: "*"
+  id: "9"
+  controller: roles
+rights_010: 
+  name: Imagesets
+  action: "*"
+  id: "10"
+  controller: imagesets
+rights_011: 
+  name: Images
+  action: "*"
+  id: "11"
+  controller: images
+rights_012: 
+  name: Update Project
+  action: update
+  id: "12"
+  controller: projects
+rights_001: 
+  name: List Projects
+  action: list
+  id: "1"
+  controller: projects
+rights_002: 
+  name: View Project
+  action: view
+  id: "2"
+  controller: projects

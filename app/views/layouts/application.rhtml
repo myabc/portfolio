@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Alex Coles Portfolio | <%= @page_title || params[:controller].capitalize %></title>
+	
+	<link href="/c/base.css" rel="stylesheet" type="text/css" />
+	<%= javascript_include_tag 'prototype.js' %>
+	<%= javascript_include_tag 'effects.js' %>
+</head>
+
+<body>
+
+<div id="page">
+<div id="masthead">
+	<h2>Alex Coles Portfolio</h2>
+	<ul id="mast-menu">
+		<li><a id="go2-projects" href="/projects"
+			title="View the projects I've worked on.">Projects</a></li>
+		<li><a id="go2-clients"  href="/clients"
+			title="View the clients I've worked for.">Clients</a></li>
+		<li><a id="go2-resume"   href="/resume"
+			title="My formal Resumé for download.">Resumé</a></li>
+		<li><a id="go2-contact"  href="/contact"
+			title="Information on how to get in touch with me.">Contact</a></li>
+	</ul>
+</div>
+
+<%= @content_for_layout %>
+
+<div id="footer">&copy; Copyright 2006, Alex Coles.</div>
+
+</div>
+
+</body>
+</html>
