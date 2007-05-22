@@ -50,7 +50,7 @@ set :lighty_port, 8264 # The port given to you by TextDrive for running lighttpd
 # if used with the setup_lighty action below.
 
 # Assumes your SVN is setup like http://topfunky.net/svn/some_project_domain.com
-set :repository, "http://#{txd_primary_domain}/svn/#{application}"
+set :repository, "http://#{txd_primary_domain}/svn/#{application}/trunk"
 # For svn+ssh.
 #set :repository, "svn+ssh://#{user}@#{txd_primary_domain}/home/#{user}/svn/#{application}"
 
