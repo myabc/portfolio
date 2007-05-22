@@ -78,22 +78,19 @@ ActiveRecord::Schema.define(:version => 14) do
 
   add_index "sessions", ["session_id"], :name => "sessions_session_id_index"
 
-  create_table "taggings", :id => false, :force => true do |t|
-    t.column "taggable_id", :integer
+  create_table "taggings", :force => true do |t|
     t.column "tag_id", :integer
-    t.column "taggable_type", :string, :limit => 100
+    t.column "taggable_id", :integer
+    t.column "taggable_type", :string
   end
+
+  add_index "taggings", ["tag_id", "taggable_id", "taggable_type"], :name => "taggings_tag_id_index"
 
   create_table "tags", :force => true do |t|
-    t.column "name", :string, :limit => 30, :default => " ", :null => false
+    t.column "name", :string
   end
 
-  add_index "tags", ["name"], :name => "name"
-
-  create_table "tags_projects", :id => false, :force => true do |t|
-    t.column "project_id", :integer, :default => 0, :null => false
-    t.column "tag_id", :integer, :default => 0, :null => false
-  end
+  add_index "tags", ["name"], :name => "tags_name_index"
 
   create_table "users", :force => true do |t|
     t.column "login", :string
