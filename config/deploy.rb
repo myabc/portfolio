@@ -4,7 +4,7 @@ require 'erb'
 set :application, "portfolio"
 set :domain, "alexcolesportfolio.com"
 set :user, "alexbcoles"
-set :repository,  "http://#{domain}/svn/portfolio"
+set :repository,  "http://#{domain}/svn/#{application}/trunk"
 set :use_sudo, false
 set :deploy_to, "/home/alexbcoles/sites/#{application}"
 set :mongrel_port, 4036
