@@ -1,5 +1,5 @@
 require 'erb'
-require 'config/shared_accelerator/accelerator_tasks'
+#require 'config/shared_accelerator/accelerator_tasks'
 
 set :application, "portfolio"
 set :repository,  "http://alexcolesportfolio.com/svn/portfolio"
