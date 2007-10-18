@@ -27,19 +27,19 @@ depend :remote, :command, :gem
 depend :remote, :gem, :mongrel, '>=1.0.1'
 depend :remote, :gem, :rake, '>=0.7'
 
-deploy.task :restart do
-#  accelerator.smf_restart
-#  accelerator.restart_apache
+# =============================================================================
+# MONGREL TASKS
+# =============================================================================
+
+desc "Start Mongrel for the first time and create the symlink"
+task :spinner, :roles => :app do
+  run "/usr/local/bin/mongrel_rails start -c /users/home/alexbcoles/web -p #{mongrel_port} -d -e production -a 127.0.0.1 -P /users/home/#{user}/var/run/mongrel-1-#{mongrel_port}.pid"
+  run "rm -rf /home/#{user}/public_html;ln -s #{current_path}/public /home/#{user}/public_html"
 end
  
-deploy.task :start do
-#  accelerator.smf_start
-#  accelerator.restart_apache
+desc "Restart Mongrel"
+task :restart, :roles => :app do
+  run "/usr/local/bin/mongrel_rails stop"
+  run "/usr/local/bin/mongrel_rails start -c /users/home/alexbcoles/web -p #{mongrel_port} -d -e production -a 127.0.0.1 -P /users/home/#{user}/var/run/mongrel-1-#{mongrel_port}.pid"
+  cleanup
 end
- 
-deploy.task :stop do
-#  accelerator.smf_stop
-#  accelerator.restart_apache
-end
- 
-after :deploy, 'deploy:cleanup'
