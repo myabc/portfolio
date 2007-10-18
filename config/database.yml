@@ -29,7 +29,7 @@ test:
 
 production:
   adapter: mysql
-  database: alexbcoles
+  database: alexbcoles_portfolio
   username: alexbcoles
   password: ri0T4Ttext
   host: localhost
