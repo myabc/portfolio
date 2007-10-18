@@ -14,7 +14,7 @@ namespace :deploy do
   end
 
   task :restart, :roles => :app do
-    run "/usr/local/bin/mongrel_rails stop"
+    run "/usr/local/bin/mongrel_rails stop -P /users/home/#{user}/var/run/mongrel-1-#{mongrel_port}.pid"
     run "/usr/local/bin/mongrel_rails start -c /users/home/alexbcoles/web -p #{mongrel_port} -d -e production -a 127.0.0.1 -P /users/home/#{user}/var/run/mongrel-1-#{mongrel_port}.pid"
     cleanup
   end
