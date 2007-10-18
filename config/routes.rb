@@ -25,4 +25,6 @@ ActionController::Routing::Routes.draw do |map|
   map.connect ':controller/:id/:action', :action => 'show',
                                          :requirements => { :id     => id_requirement,
                                                             :action => action_requirement }
+                                                            
+  map.connect '', :controller => 'projects'
 end
