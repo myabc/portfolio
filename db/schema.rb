@@ -5,9 +5,9 @@
 ActiveRecord::Schema.define(:version => 14) do
 
   create_table "clients", :force => true do |t|
-    t.column "short_name", :string, :limit => 20, :default => "", :null => false
-    t.column "name", :string, :default => "", :null => false
-    t.column "client_uri", :string
+    t.column "short_name",  :string, :limit => 20, :default => "", :null => false
+    t.column "name",        :string,               :default => "", :null => false
+    t.column "client_uri",  :string
     t.column "description", :text
   end
 
@@ -15,19 +15,19 @@ ActiveRecord::Schema.define(:version => 14) do
   add_index "clients", ["name"], :name => "name"
 
   create_table "images", :force => true do |t|
-    t.column "name", :string, :limit => 100, :default => "", :null => false
-    t.column "extension", :string, :limit => 10, :default => "", :null => false
-    t.column "caption", :string
-    t.column "width", :integer, :limit => 4
-    t.column "height", :integer, :limit => 4
-    t.column "imageset_id", :integer, :default => 0, :null => false
+    t.column "name",        :string,  :limit => 100, :default => "", :null => false
+    t.column "extension",   :string,  :limit => 10,  :default => "", :null => false
+    t.column "caption",     :string
+    t.column "width",       :integer, :limit => 4
+    t.column "height",      :integer, :limit => 4
+    t.column "imageset_id", :integer,                :default => 0,  :null => false
   end
 
   create_table "imagesets", :force => true do |t|
-    t.column "title", :string, :limit => 100, :default => "", :null => false
+    t.column "title",       :string,  :limit => 100, :default => "", :null => false
     t.column "description", :text
-    t.column "project_id", :integer, :default => 0, :null => false
-    t.column "ord", :integer, :limit => 4, :default => 0, :null => false
+    t.column "project_id",  :integer,                :default => 0,  :null => false
+    t.column "ord",         :integer, :limit => 4,   :default => 0,  :null => false
   end
 
   add_index "imagesets", ["title"], :name => "title"
@@ -37,28 +37,28 @@ ActiveRecord::Schema.define(:version => 14) do
   end
 
   create_table "projects", :force => true do |t|
-    t.column "name", :string, :default => "", :null => false
-    t.column "uri", :string
-    t.column "start_date", :date
-    t.column "end_date", :date
+    t.column "name",        :string,               :default => "", :null => false
+    t.column "uri",         :string
+    t.column "start_date",  :date
+    t.column "end_date",    :date
     t.column "description", :text
-    t.column "client_id", :integer, :limit => 4, :default => 0, :null => false
-    t.column "media_type", :integer, :limit => 4, :default => 0, :null => false
-    t.column "status", :integer, :limit => 4, :default => 0, :null => false
-    t.column "medium_id", :integer
+    t.column "client_id",   :integer, :limit => 4, :default => 0,  :null => false
+    t.column "media_type",  :integer, :limit => 4, :default => 0,  :null => false
+    t.column "status",      :integer, :limit => 4, :default => 0,  :null => false
+    t.column "medium_id",   :integer
   end
 
   add_index "projects", ["name"], :name => "name"
 
   create_table "rights", :force => true do |t|
-    t.column "name", :string, :limit => 100
-    t.column "controller", :string, :limit => 50, :default => ""
-    t.column "action", :string, :limit => 50, :default => ""
+    t.column "name",       :string, :limit => 100
+    t.column "controller", :string, :limit => 50,  :default => ""
+    t.column "action",     :string, :limit => 50,  :default => ""
   end
 
   create_table "rights_roles", :id => false, :force => true do |t|
     t.column "right_id", :integer
-    t.column "role_id", :integer
+    t.column "role_id",  :integer
   end
 
   create_table "roles", :force => true do |t|
@@ -72,15 +72,15 @@ ActiveRecord::Schema.define(:version => 14) do
 
   create_table "sessions", :force => true do |t|
     t.column "session_id", :string
-    t.column "data", :text
+    t.column "data",       :text
     t.column "updated_at", :datetime
   end
 
   add_index "sessions", ["session_id"], :name => "sessions_session_id_index"
 
   create_table "taggings", :force => true do |t|
-    t.column "tag_id", :integer
-    t.column "taggable_id", :integer
+    t.column "tag_id",        :integer
+    t.column "taggable_id",   :integer
     t.column "taggable_type", :string
   end
 
@@ -93,13 +93,13 @@ ActiveRecord::Schema.define(:version => 14) do
   add_index "tags", ["name"], :name => "tags_name_index"
 
   create_table "users", :force => true do |t|
-    t.column "login", :string
-    t.column "email", :string
-    t.column "crypted_password", :string, :limit => 40
-    t.column "salt", :string, :limit => 40
-    t.column "created_at", :datetime
-    t.column "updated_at", :datetime
-    t.column "remember_token", :string
+    t.column "login",                     :string
+    t.column "email",                     :string
+    t.column "crypted_password",          :string,   :limit => 40
+    t.column "salt",                      :string,   :limit => 40
+    t.column "created_at",                :datetime
+    t.column "updated_at",                :datetime
+    t.column "remember_token",            :string
     t.column "remember_token_expires_at", :datetime
   end
 

@@ -24,10 +24,10 @@ class ProjectsController < ApplicationController
     end
     
     # lookups
-    @media = Medium.find_all
+    @media = Medium.find(:all)
     @clients = Client.find(:all, :order => "name")
-    @imagesets = Imageset.find_all
-    @images = Image.find_all
+    @imagesets = Imageset.find(:all)
+    @images = Image.find(:all)
   end
   
   
@@ -37,8 +37,8 @@ class ProjectsController < ApplicationController
   end
   
   def list
-    @tags = Tag.find_all
-    @media = Medium.find_all
+    @tags = Tag.find(:all)
+    @media = Medium.find(:all)
     
     #if short_name = params[:short_name]
     #  @client_scope = Client.find_by_short_name(short_name)
