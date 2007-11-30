@@ -10,23 +10,12 @@ class ProjectsController < ApplicationController
     @tags  = Tag.find(:all, :order => "name")
     @statuses = [ "planned", "completed" ]
     
-    
-    
-    #if short_name = params[:short_name]
-    #  @client_scope = Client.find_by_short_name(short_name)
-    #end
-    
     #@projects = Project.find(:all, :order => "name")
-    @projects = Project.paginate :page => params[:page]
-    
-    #render :text => @client_scope.id
-    
-    #@projects = if tag_name = params[:id] 
-    #    Tag.find_by_name(tag_name).tagged
-    #  else
-    #    Project.find_all
-    #  end
-    #@project_pages, @projects = paginate :project, :per_page =>20
+    @projects = if tag_name = params[:tag]
+      Tag.find_by_name(tag_name).projects.paginate :page => params[:page]
+    else
+      Project.find(:all).paginate :page => params[:page]
+    end
     
     respond_to do |format|
       format.html # index.rhtml
@@ -120,8 +109,5 @@ class ProjectsController < ApplicationController
   private
   #######
   
-  def client_scope
-    
-  end
   
 end

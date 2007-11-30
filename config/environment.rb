@@ -52,3 +52,4 @@ end
 # end
 
 # Include your application configuration below
+require 'tag_extensions'
