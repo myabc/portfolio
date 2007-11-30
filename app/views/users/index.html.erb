@@ -1,0 +1,28 @@
+<h1>Listing users</h1>
+
+<table>
+
+        <tr>
+        <% for column in User.content_columns %>
+          <th><%= column.human_name %></th>
+        <% end %>
+        </tr>
+
+      <% for user in @users %>
+        <tr>
+        <% for column in User.content_columns %>
+          <td><%=h user.send(column.name) %></td>
+        <% end %>
+
+
+  <tr>
+    <td><%= link_to 'Show', user %></td>
+    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New user', new_user_path %>

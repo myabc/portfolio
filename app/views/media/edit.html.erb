@@ -1,10 +1,11 @@
 <h1>Editing medium</h1>
 
-<%= start_form_tag :action => 'edit', :id => @medium %>
-  <%= render :partial => 'form' %>
-  <%= submit_tag 'Save' %>
-<%= end_form_tag %>
-<%= button_to 'Destroy', { :action => 'destroy', :id => @medium }, :confirm => 'Are you sure you want to destroy this medium?' %>
+<%= error_messages_for :medium %>
 
-<%= link_to 'Show', :action => 'show', :id => @medium %> |
-<%= link_to 'Back to list', :action => 'list' %>
+<% form_for(@medium) do |f| %>
+    <%= render :partial => 'form', :locals => { :form => f } %>
+    <%= f.submit "Update" %>
+<% end %>
+
+<%= link_to 'Show', @medium %> |
+<%= link_to 'Back', media_path %>

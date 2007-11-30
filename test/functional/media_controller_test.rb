@@ -1,116 +1,47 @@
 require File.dirname(__FILE__) + '/../test_helper'
-require 'media_controller'
 
-# Re-raise errors caught by the controller.
-class MediaController; def rescue_action(e) raise e end; end
+class MediaControllerTest < ActionController::TestCase
+  tests MediaController
 
-class MediaControllerTest < Test::Unit::TestCase
-  fixtures :media
-
-  def setup
-    @controller = MediaController.new
-    @request    = ActionController::TestRequest.new
-    @response   = ActionController::TestResponse.new
-  end
-
-  def test_destroy_using_get
-    assert_not_nil Medium.find(1)
-
-    get 'destroy', :id => 1
-    assert_response :redirect
-    assert_redirected_to :action => 'edit'
-
-    assert_not_nil Medium.find(1)
-  end
-
-  def test_destroy_using_post
-    assert_not_nil Medium.find(1)
-
-    post 'destroy', :id => 1
-    assert_response :redirect
-    assert_redirected_to :action => 'list'
-
-    assert_raise(ActiveRecord::RecordNotFound) { Medium.find(1) }
-  end
-
-  def test_destroy_without_id
-    assert_not_nil Medium.find(1)
-
-    post 'destroy'
-    assert_response :redirect
-    assert_redirected_to :action => 'list'
-    assert flash.has_key?(:notice)
-
-    assert_not_nil Medium.find(1)
-  end
-
-  def test_edit_using_get
-    get 'edit', :id => 1
-
+  def test_should_get_index
+    get :index
     assert_response :success
-    assert_template 'edit'
-
-    assert_not_nil assigns(:medium)
-    assert assigns(:medium).valid?
-  end
-
-  def test_edit_using_post
-    post 'edit', :id => 1
-    assert_response :redirect
-    assert_redirected_to :action => 'show', :id => 1
-  end
-
-  def test_edit_without_id
-    post 'edit'
-    assert_response :redirect
-    assert_redirected_to :action => 'list'
-    assert flash.has_key?(:notice)
-  end
-
-  def test_list
-    get 'list'
-
-    assert_response :success
-    assert_template 'list'
-
     assert_not_nil assigns(:media)
   end
 
-  def test_new_using_get
-    get 'new'
-
+  def test_should_get_new
+    get :new
     assert_response :success
-    assert_template 'new'
-
-    assert_not_nil assigns(:medium)
   end
 
-  def test_new_using_post
-    num_media = Medium.count
+  def test_should_create_medium
+    assert_difference('Medium.count') do
+      post :create, :medium => { }
+    end
 
-    post 'new', :medium => {}
-
-    assert_response :redirect
-    assert_redirected_to :action => 'list'
-
-    assert_equal num_media + 1, Medium.count
+    assert_redirected_to medium_path(assigns(:medium))
   end
 
-  def test_show
-    get 'show', :id => 1
-
+  def test_should_show_medium
+    get :show, :id => 1
     assert_response :success
-    assert_template 'show'
-
-    assert_not_nil assigns(:medium)
-    assert assigns(:medium).valid?
   end
 
-  def test_show_without_id
-    get 'show'
+  def test_should_get_edit
+    get :edit, :id => 1
+    assert_response :success
+  end
 
-    assert_response :redirect
-    assert_redirected_to :action => 'list'
-    assert flash.has_key?(:notice)
+  def test_should_update_medium
+    put :update, :id => 1, :medium => { }
+    assert_redirected_to medium_path(assigns(:medium))
+  end
+
+  def test_should_destroy_medium
+    assert_difference('Medium.count', -1) do
+      delete :destroy, :id => 1
+    end
+
+    assert_redirected_to media_path
   end
 end

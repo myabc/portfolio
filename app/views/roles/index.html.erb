@@ -12,6 +12,7 @@
         <% for column in Role.content_columns %>
           <td><%=h role.send(column.name) %></td>
         <% end %>
+        
     <td><%= link_to 'Show', role_path(role) %></td>
     <td><%= link_to 'Edit', edit_role_path(role) %></td>
     <td><%= link_to 'Destroy', role_path(role), :confirm => 'Are you sure?', :method => :delete %></td>

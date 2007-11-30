@@ -1,47 +1,88 @@
 class UsersController < ApplicationController
-  verify :only => [ 'show', 'edit', 'destroy' ],
-         :params => :id,
-         :add_flash => { :notice => 'Missing user ID.' },
-         :redirect_to => { :action => 'list' }
+  
+  before_filter :login_required
+  
+  # GET /users
+  # GET /users.xml
+  def index
+    @users = User.find(:all)
 
-  def destroy
-    if request.post?
-      User.find(params[:id]).destroy
-      flash[:notice] = 'The user was successfully destroyed.'
-      redirect_to :action => 'list'
-    else
-      flash[:notice] = 'Click Destroy to destroy the user.'
-      redirect_to :action => 'edit', :id => params[:id]
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @users }
     end
   end
 
-  def edit
-    @user = User.find(params[:id])
-    if request.post?
-      if @user.update_attributes(params[:user])
-        flash[:notice] = 'The user was successfully edited.'
-        redirect_to :action => 'show', :id => @user
-      end
-    end
-  end
-
-  def list
-    @user_pages, @users = paginate(:users)
-  end
-
-  def new
-    if request.post?
-      @user = User.new(params[:user])
-      if @user.save
-        flash[:notice] = 'A new user was successfully added.'
-        redirect_to :action => 'list'
-      end
-    else
-      @user = User.new
-    end
-  end
-
+  # GET /users/1
+  # GET /users/1.xml
   def show
     @user = User.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @user }
+    end
+  end
+
+  # GET /users/new
+  # GET /users/new.xml
+  def new
+    @user = User.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.xml  { render :xml => @user }
+    end
+  end
+
+  # GET /users/1/edit
+  def edit
+    @user = User.find(params[:id])
+  end
+
+  # POST /users
+  # POST /users.xml
+  def create
+    @user = User.new(params[:user])
+
+    respond_to do |format|
+      if @user.save
+        flash[:notice] = 'User was successfully created.'
+        format.html { redirect_to(@user) }
+        format.xml  { render :xml => @user, :status => :created, :location => @user }
+      else
+        format.html { render :action => "new" }
+        format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /users/1
+  # PUT /users/1.xml
+  def update
+    @user = User.find(params[:id])
+
+    respond_to do |format|
+      if @user.update_attributes(params[:user])
+        flash[:notice] = 'User was successfully updated.'
+        format.html { redirect_to(@user) }
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /users/1
+  # DELETE /users/1.xml
+  def destroy
+    @user = User.find(params[:id])
+    @user.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(users_url) }
+      format.xml  { head :ok }
+    end
   end
 end

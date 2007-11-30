@@ -1,47 +1,86 @@
 class MediaController < ApplicationController
-  verify :only => [ 'show', 'edit', 'destroy' ],
-         :params => :id,
-         :add_flash => { :notice => 'Missing medium ID.' },
-         :redirect_to => { :action => 'list' }
+  
+  before_filter :login_required
+  
+  # GET /media
+  # GET /media.xml
+  def index
+    @media = Medium.find(:all)
 
-  def destroy
-    if request.post?
-      Medium.find(params[:id]).destroy
-      flash[:notice] = 'The medium was successfully destroyed.'
-      redirect_to :action => 'list'
-    else
-      flash[:notice] = 'Click Destroy to destroy the medium.'
-      redirect_to :action => 'edit', :id => params[:id]
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @media }
     end
   end
 
-  def edit
-    @medium = Medium.find(params[:id])
-    if request.post?
-      if @medium.update_attributes(params[:medium])
-        flash[:notice] = 'The medium was successfully edited.'
-        redirect_to :action => 'show', :id => @medium
-      end
-    end
-  end
-
-  def list
-    @medium_pages, @media = paginate(:media)
-  end
-
-  def new
-    if request.post?
-      @medium = Medium.new(params[:medium])
-      if @medium.save
-        flash[:notice] = 'A new medium was successfully added.'
-        redirect_to :action => 'list'
-      end
-    else
-      @medium = Medium.new
-    end
-  end
-
+  # GET /media/1.xml
   def show
     @medium = Medium.find(params[:id])
+
+    respond_to do |format|
+      format.xml  { render :xml => @medium }
+    end
+  end
+
+  # GET /media/new
+  # GET /media/new.xml
+  def new
+    @medium = Medium.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.xml  { render :xml => @medium }
+    end
+  end
+
+  # GET /media/1/edit
+  def edit
+    @medium = Medium.find(params[:id])
+  end
+
+  # POST /media
+  # POST /media.xml
+  def create
+    @medium = Medium.new(params[:medium])
+
+    respond_to do |format|
+      if @medium.save
+        flash[:notice] = 'Medium was successfully created.'
+        format.html { redirect_to(media_url) }
+        format.xml  { render :xml => @medium, :status => :created, :location => @medium }
+      else
+        format.html { render :action => "new" }
+        format.xml  { render :xml => @medium.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /media/1
+  # PUT /media/1.xml
+  def update
+    @medium = Medium.find(params[:id])
+
+    respond_to do |format|
+      if @medium.update_attributes(params[:medium])
+        flash[:notice] = 'Medium was successfully updated.'
+        format.html { redirect_to(media_url) }
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @medium.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /media/1
+  # DELETE /media/1.xml
+  def destroy
+    @medium = Medium.find(params[:id])
+    @medium.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(media_url) }
+      format.xml  { head :ok }
+    end
   end
 end
