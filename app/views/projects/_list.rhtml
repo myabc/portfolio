@@ -1,0 +1,9 @@
+<% for project in @projects %>
+
+    <h2><%= link_to project.name, project_path(project) %>
+    
+    <%= link_to 'Edit', edit_project_path(project), :class => 'admin-action' %>
+    <%= link_to 'Delete', project_path(project), :confirm => 'Are you sure?', :method => :delete, :class => 'admin-action' %>
+    </h2>
+
+<% end %>

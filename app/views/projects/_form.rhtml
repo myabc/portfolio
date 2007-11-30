@@ -19,6 +19,11 @@
     <%= form.text_field :uri, :class => 'large-input' %>
 </div>
 
+<div class="f-row">
+    <label for="project_status">Status:</label>
+    <%= form.text_field :status %>
+</div>
+
 <div class="f-row"><label for="start_date">Start:</label>
     <%= date_select( "project", "start_date", 
             { :start_year => 1990,

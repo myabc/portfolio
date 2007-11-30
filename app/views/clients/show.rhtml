@@ -1,8 +1,14 @@
 <h1><%= @client.name %></h1>
 
-<%= @client.client_uri %>
+<%= render :partial => 'view', :locals => { :client => @client } %>
 
-<%= @client.description %>
+<hr/>
+
+<%= @client.projects %>
+
+<%= render :partial => 'projects/list', :projects = @client.projects %>
+
+<hr/>
 
 <%= link_to 'Edit', edit_client_path(@client) %> |
 <%= link_to 'Back to list', clients_path %>

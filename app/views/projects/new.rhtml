@@ -23,7 +23,9 @@ cursor:move;
 
 <%= link_to 'Back', { :action => 'list' }, :class => 'admin-action' %>
 
-<%= start_form_tag :action => 'new' %>
-  <%= render :partial => 'form' %>
+
+<% form_for :project, :url => projects_path do |form| %> 
+  <%= render :partial => 'form', :locals => { :form => form } %>
   <%= submit_tag "Create" %>
-<%= end_form_tag %>
+<% end %>
+

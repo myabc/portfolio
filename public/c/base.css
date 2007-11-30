@@ -161,3 +161,34 @@ h1#clients-head 	{ background: url(/i/clients-hd.gif) top left no-repeat; }
 h1#projects-head 	{ background: url(/i/projects-hd.gif) top left no-repeat; }
 h1#resume-head 		{ background: url(/i/resume-hd.gif)  top left no-repeat; }
 h1#contact-head 	{ background: url(/i/contact-hd.gif) top left no-repeat; }
+
+
+.pagination {
+  padding: 3px;
+  margin: 3px;
+}
+.pagination a {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #aaaadd;
+  text-decoration: none;
+  color: #000099;
+}
+.pagination a:hover, .pagination a:active {
+  border: 1px solid #000099;
+  color: #000;
+}
+.pagination span.current {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #000099;
+  font-weight: bold;
+  background-color: #000099;
+  color: #FFF;
+}
+.pagination span.disabled {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #eee;
+  color: #ddd;
+}

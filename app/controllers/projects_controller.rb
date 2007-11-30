@@ -6,14 +6,19 @@ class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.xml
   def index
-    @tags = Tag.find(:all)
-    @media = Medium.find(:all)
+    @media = Medium.find(:all, :order => "name")
+    @tags  = Tag.find(:all, :order => "name")
+    @statuses = [ "planned", "completed" ]
+    
+    
     
     #if short_name = params[:short_name]
     #  @client_scope = Client.find_by_short_name(short_name)
     #end
     
-    @projects = Project.find(:all, :order => "name")
+    #@projects = Project.find(:all, :order => "name")
+    @projects = Project.paginate :page => params[:page]
+    
     #render :text => @client_scope.id
     
     #@projects = if tag_name = params[:id] 

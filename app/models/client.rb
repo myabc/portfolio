@@ -4,4 +4,8 @@ class Client < ActiveRecord::Base
   has_many :projects
   validates_presence_of( :name, :short_name )
   validates_uniqueness_of( :short_name )
+  
+  # set the default values for pagination
+  cattr_reader :per_page
+  @@per_page = 10
 end

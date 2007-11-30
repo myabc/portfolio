@@ -1,7 +1,7 @@
 <div id="content-col">
 
 <div id="client-trail">
-<%= link_to @project.client.name, { :controller => "clients", :action => "view", :id => @project.client.id } %>
+<%= link_to @project.client.name, client_path(@project.client) %>
 </div>
 <h1><%= @project.name %></h1>
 
@@ -22,8 +22,6 @@
 <%= @project.description %>
 </div>
 
-
-
 <div>
 <h2>Images</h2>
 <%= render_collection_of_partials "imagesets/view", @project.imagesets %>
@@ -39,7 +37,8 @@
 </div>
 
 <div id="clientInfo">
-	  <%= render :partial => 'clients/view' %>
+    <h2>About <%= @project.client.name %></h2>
+    <%= render :partial => 'clients/view', :locals => { :client => @project.client } %>
 </div>
 
 
