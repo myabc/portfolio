@@ -1,10 +1,10 @@
 class ApplicationController < ActionController::Base
   include AuthenticatedSystem
-  before_filter :login_from_cookie
+  #before_filter :login_from_cookie
   
-  def authorize?(user)
-    user.login = "alexbcoles"
-  end
+  #def authorize?(user)
+  #  user.login = "alexbcoles"
+  #end
 
   #before_filter :check_authentication,
   #              :check_authorization,

@@ -13,7 +13,7 @@ test:
   adapter: mysql
   database: portfolio_test
   username: root
-  password: 
+  password: WebWorx
   host: localhost
   encoding: utf8
 

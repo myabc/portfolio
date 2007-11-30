@@ -12,7 +12,11 @@ class User < ActiveRecord::Base
   validates_length_of       :email,    :within => 3..100
   validates_uniqueness_of   :login, :email, :case_sensitive => false
   before_save :encrypt_password
-
+  
+  # prevents a user from submitting a crafted form that bypasses activation
+  # anything else you want your user to change should be added here.
+  attr_accessible :login, :email, :password, :password_confirmation
+  
   # Authenticates a user by their login name and unencrypted password.  Returns the user or nil.
   def self.authenticate(login, password)
     u = find_by_login(login) # need to get the salt
@@ -39,7 +43,15 @@ class User < ActiveRecord::Base
 
   # These create and unset the fields required for remembering users between browser closes
   def remember_me
-    self.remember_token_expires_at = 2.weeks.from_now.utc
+    remember_me_for 2.weeks
+  end
+
+  def remember_me_for(time)
+    remember_me_until time.from_now.utc
+  end
+
+  def remember_me_until(time)
+    self.remember_token_expires_at = time
     self.remember_token            = encrypt("#{email}--#{remember_token_expires_at}")
     save(false)
   end
@@ -61,4 +73,5 @@ class User < ActiveRecord::Base
     def password_required?
       crypted_password.blank? || !password.blank?
     end
+    
 end
