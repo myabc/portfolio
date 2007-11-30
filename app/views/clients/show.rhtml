@@ -1,8 +1,8 @@
-<% for column in Client.content_columns %>
-<p>
-  <b><%= column.human_name %>:</b> <%= h @client.send(column.name) %>
-</p>
-<% end %>
+<h1><%= @client.name %></h1>
 
-<%= link_to 'Edit', :action => 'edit', :id => @client %> |
-<%= link_to 'Back to list', :action => 'list' %>
+<%= @client.client_uri %>
+
+<%= @client.description %>
+
+<%= link_to 'Edit', edit_client_path(@client) %> |
+<%= link_to 'Back to list', clients_path %>

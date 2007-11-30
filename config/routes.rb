@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :clients
+  map.resources :projects
+  map.resources :roles
+
   # The priority is based upon order of creation: first created -> highest priority.
   
   # Sample of regular route:
@@ -18,13 +22,16 @@ ActionController::Routing::Routes.draw do |map|
   map.connect ':controller/service.wsdl', :action => 'wsdl'
 
   # Install the default route as the lowest priority.
-  id_requirement     = /\d+/
-  action_requirement = /[A-Za-z]\S*/
-  map.connect ':controller/:action', :action => 'list',
-                                     :requirements => { :action => action_requirement }
-  map.connect ':controller/:id/:action', :action => 'show',
-                                         :requirements => { :id     => id_requirement,
-                                                            :action => action_requirement }
-                                                            
+  #id_requirement     = /\d+/
+  #action_requirement = /[A-Za-z]\S*/
+  #map.connect ':controller/:action', :action => 'list',
+  #                                   :requirements => { :action => action_requirement }
+  #map.connect ':controller/:id/:action', :action => 'show',
+  #                                       :requirements => { :id     => id_requirement,
+  #                                                          :action => action_requirement }
+  
+
+  map.connect ':controller/:action/:id' 
+
   map.connect '', :controller => 'projects'
 end

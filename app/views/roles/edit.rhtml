@@ -1,10 +1,12 @@
 <h1>Editing role</h1>
 
-<%= start_form_tag :action => 'edit', :id => @role %>
-  <%= render :partial => 'form' %>
-  <%= submit_tag 'Save' %>
-<%= end_form_tag %>
-<%= button_to 'Destroy', { :action => 'destroy', :id => @role }, :confirm => 'Are you sure you want to destroy this role?' %>
+<%= error_messages_for :role %>
 
-<%= link_to 'Show', :action => 'show', :id => @role %> |
-<%= link_to 'Back to list', :action => 'list' %>
+<% form_for(:role, :url => role_path(@role), :html => { :method => :put }) do |f| %>
+  
+  <%= render :partial => 'form', :locals => { :form => f } %>
+  <%= submit_tag "Update" %>
+<% end %>
+
+<%= link_to 'Show', role_path(@role) %> |
+<%= link_to 'Back', roles_path %>

@@ -1,42 +1,11 @@
 class ProjectsController < ApplicationController
   
   before_filter :login_required, :except => [ :index, :list, :view ]
-  
-  def destroy
-    if request.post?
-      Project.find(params[:id]).destroy
-      flash[:notice] = 'The project was successfully destroyed.'
-      redirect_to :action => 'list'
-    else
-      flash[:notice] = 'Click Destroy to destroy the project.'
-      redirect_to :action => 'edit', :id => params[:id]
-    end
-  end
-  
-  def edit
-    @project = Client.find(params[:id])
-    if request.post?
-      if @project.update_attributes(params[:client])
-        @project.tag_with(params[:tag_list])
-        flash[:notice] = 'The client was successfully edited.'
-        redirect_to :action => 'show', :id => @project
-      end
-    end
-    
-    # lookups
-    @media = Medium.find(:all)
-    @clients = Client.find(:all, :order => "name")
-    @imagesets = Imageset.find(:all)
-    @images = Image.find(:all)
-  end
-  
-  
+
+  # GET /  (this is also the default route)
+  # GET /projects
+  # GET /projects.xml
   def index
-    list
-    render :action => 'list'
-  end
-  
-  def list
     @tags = Tag.find(:all)
     @media = Medium.find(:all)
     
@@ -53,28 +22,93 @@ class ProjectsController < ApplicationController
     #    Project.find_all
     #  end
     #@project_pages, @projects = paginate :project, :per_page =>20
-  end  
-
-  def new
-    if request.post?
-      @project = Project.new(params[:project])
-      if @project.save
-        flash[:notice] = 'A new project was successfully added.'
-        redirect_to :action => 'list'
-      end
-    else
-      @project = Project.new
+    
+    respond_to do |format|
+      format.html # index.rhtml
+      format.xml  { render :xml => @projects.to_xml }
     end
   end
-
+  
+  # GET /projects/1
+  # GET /projects/1.xml
   def show
-    view
-    render :action => 'view'
+    @project = Project.find(params[:id])
+
+    @page_title = @project.name
+    
+    respond_to do |format|
+      format.html # show.rhtml
+      format.xml  { render :xml => @project.to_xml }
+    end
   end
   
-  def view
+  # GET /projects/new
+  def new
+    @project = Project.new
+    
+    # lookups
+    @media = Medium.find(:all)
+    @clients = Client.find(:all, :order => "name")
+    @imagesets = Imageset.find(:all)
+    @images = Image.find(:all)
+    
+  end
+  
+  # GET /projects/1;edit
+  def edit
     @project = Project.find(params[:id])
-    @page_title = @project.name
+    
+    # lookups
+    @media = Medium.find(:all)
+    @clients = Client.find(:all, :order => "name")
+    @imagesets = Imageset.find(:all)
+    @images = Image.find(:all)
+  end
+  
+  # POST /projects
+  # POST /projects.xml
+  def create
+    @project = Project.new(params[:project])
+
+    respond_to do |format|
+      if @project.save
+        flash[:notice] = 'Project was successfully created.'
+        format.html { redirect_to project_url(@project) }
+        format.xml  { head :created, :location => project_url(@project) }
+      else
+        format.html { render :action => "new" }
+        format.xml  { render :xml => @project.errors.to_xml }
+      end
+    end
+  end
+  
+  # PUT /projects/1
+  # PUT /projects/1.xml
+  def update
+    @project = Project.find(params[:id])
+    
+    respond_to do |format|
+      if @role.update_attributes(params[:project])
+        flash[:notice] = 'Project was successfully updated.'
+        format.html { redirect_to project_url(@project) }
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @project.errors.to_xml }
+      end
+    end
+  end
+  
+  # DELETE /projects/1
+  # DELETE /projects/1.xml
+  def destroy
+    @project = Project.find(params[:id])
+    @project.destroy
+
+    respond_to do |format|
+      format.html { redirect_to projects_url }
+      format.xml  { head :ok }
+    end
   end
   
   #######

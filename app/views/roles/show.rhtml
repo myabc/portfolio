@@ -1,8 +1,8 @@
-<% for column in Role.content_columns %>
+<% for column in Client.content_columns %>
 <p>
-  <b><%= column.human_name %>:</b> <%= h @role.send(column.name) %>
+  <b><%= column.human_name %>:</b> <%= h @client.send(column.name) %>
 </p>
 <% end %>
 
-<%= link_to 'Edit', :action => 'edit', :id => @role %> |
-<%= link_to 'Back to list', :action => 'list' %>
+<%= link_to 'Edit', edit_role_path(@role) %> |
+<%= link_to 'Back', roles_path %>

@@ -1,0 +1,26 @@
+<div id="content-col">
+
+<h1 id="clients-head">Clients</h1>
+
+<%= link_to 'New Client', new_client_path, :class => 'admin-action' %>
+
+<% for client in @clients %>
+
+    <h2><%= link_to client.name, client_path(client) %>
+    <%= link_to 'Edit', edit_client_path(client), :class => 'admin-action' %>
+    <%= link_to 'Delete', client_path(client), :confirm => 'Are you sure?', :method => :delete, :class => 'admin-action' %>
+    </h2> 
+    
+    <ul>
+    <% for project in client.projects %>
+        <li><%= link_to project.name, 
+                :controller => 'projects',
+                :action => 'view',
+                :id => project.id %></li>
+    <% end %>
+    </ul>
+
+<% end %>
+
+<%= will_paginate @clients %>
+</div>

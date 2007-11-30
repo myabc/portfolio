@@ -13,104 +13,45 @@ class RolesControllerTest < Test::Unit::TestCase
     @response   = ActionController::TestResponse.new
   end
 
-  def test_destroy_using_get
-    assert_not_nil Role.find(1)
-
-    get 'destroy', :id => 1
-    assert_response :redirect
-    assert_redirected_to :action => 'edit'
-
-    assert_not_nil Role.find(1)
-  end
-
-  def test_destroy_using_post
-    assert_not_nil Role.find(1)
-
-    post 'destroy', :id => 1
-    assert_response :redirect
-    assert_redirected_to :action => 'list'
-
-    assert_raise(ActiveRecord::RecordNotFound) { Role.find(1) }
-  end
-
-  def test_destroy_without_id
-    assert_not_nil Role.find(1)
-
-    post 'destroy'
-    assert_response :redirect
-    assert_redirected_to :action => 'list'
-    assert flash.has_key?(:notice)
-
-    assert_not_nil Role.find(1)
-  end
-
-  def test_edit_using_get
-    get 'edit', :id => 1
-
+  def test_should_get_index
+    get :index
     assert_response :success
-    assert_template 'edit'
-
-    assert_not_nil assigns(:role)
-    assert assigns(:role).valid?
+    assert assigns(:roles)
   end
 
-  def test_edit_using_post
-    post 'edit', :id => 1
-    assert_response :redirect
-    assert_redirected_to :action => 'show', :id => 1
-  end
-
-  def test_edit_without_id
-    post 'edit'
-    assert_response :redirect
-    assert_redirected_to :action => 'list'
-    assert flash.has_key?(:notice)
-  end
-
-  def test_list
-    get 'list'
-
+  def test_should_get_new
+    get :new
     assert_response :success
-    assert_template 'list'
-
-    assert_not_nil assigns(:roles)
+  end
+  
+  def test_should_create_role
+    old_count = Role.count
+    post :create, :role => { }
+    assert_equal old_count+1, Role.count
+    
+    assert_redirected_to role_path(assigns(:role))
   end
 
-  def test_new_using_get
-    get 'new'
-
+  def test_should_show_role
+    get :show, :id => 1
     assert_response :success
-    assert_template 'new'
-
-    assert_not_nil assigns(:role)
   end
 
-  def test_new_using_post
-    num_roles = Role.count
-
-    post 'new', :role => {}
-
-    assert_response :redirect
-    assert_redirected_to :action => 'list'
-
-    assert_equal num_roles + 1, Role.count
-  end
-
-  def test_show
-    get 'show', :id => 1
-
+  def test_should_get_edit
+    get :edit, :id => 1
     assert_response :success
-    assert_template 'show'
-
-    assert_not_nil assigns(:role)
-    assert assigns(:role).valid?
   end
-
-  def test_show_without_id
-    get 'show'
-
-    assert_response :redirect
-    assert_redirected_to :action => 'list'
-    assert flash.has_key?(:notice)
+  
+  def test_should_update_role
+    put :update, :id => 1, :role => { }
+    assert_redirected_to role_path(assigns(:role))
+  end
+  
+  def test_should_destroy_role
+    old_count = Role.count
+    delete :destroy, :id => 1
+    assert_equal old_count-1, Role.count
+    
+    assert_redirected_to roles_path
   end
 end

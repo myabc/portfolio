@@ -22,9 +22,10 @@ cursor:move;
 
 <h1>Edit Project</h1>
 
-<%= link_to 'Back', { :action => 'list' }, :class => 'admin-action' %>
+<%= link_to 'Show', project_path(@project) %> |
+<%= link_to 'Back', projects_path %>
 
-<%= start_form_tag :action => 'edit', :id => @project %>
-  <%= render :partial => 'form' %>
+<% form_for :project, :url => project_path(@project), :html => { :method => :put } do |form| %> 
+  <%= render :partial => 'form', :locals => { :form => form } %>
   <%= submit_tag "Save" %>
-<%= end_form_tag %>
+<% end %>

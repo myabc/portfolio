@@ -1,0 +1,37 @@
+<h1 id="projects-head">Projects</h1>
+
+<div id="media-list">
+    <h3>Media</h3>
+    <ul class="horizontal">
+    <% for medium in @media %>
+    <li><%= link_to medium.name, :action => 'list', :id => medium.name %></li>
+    <% end %>
+    </ul>
+</div>
+
+<div id="tag-list">
+    <h3>Tags</h3>
+    <ul class="horizontal">
+    <li><%= link_to 'all', :action => 'list', :id => 'all '%></li>
+    <% for tag in @tags %>
+    <li><%= 
+        if params[:id] == tag.name
+            "<span class=''>" + tag.name + "</span>"
+        else
+            link_to tag.name, :action => 'list', :id => tag.name 
+        end %></li>
+    <% end %>
+    </ul>
+</div>
+
+<%= link_to 'New Project', new_project_path, :class => 'admin-action' %>
+
+<% for project in @projects %>
+
+    <h2><%= link_to project.name, project_path(project) %>
+    
+    <%= link_to 'Edit', edit_project_path(project), :class => 'admin-action' %>
+    <%= link_to 'Delete', project_path(project), :confirm => 'Are you sure?', :method => :delete, :class => 'admin-action' %>
+    </h2>
+
+<% end %>

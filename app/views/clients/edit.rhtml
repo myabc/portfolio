@@ -3,9 +3,7 @@
 <%= link_to 'View', { :action => 'view', :id => @client }, :class => 'admin-action' %> |
 <%= link_to 'Back', { :action => 'list' }, :class => 'admin-action' %>
 
-<%= start_form_tag :action => 'edit', :id => @client %>
-  <%= render :partial => 'form' %>
+<% form_for :client, :url => client_path(@client), :html => { :method => :put } do |form| %> 
+  <%= render :partial => 'form', :locals => { :form => form } %>
   <%= submit_tag 'Save' %>
-<%= end_form_tag %>
-
-
+<% end %>
