@@ -16,17 +16,32 @@
 <div id="masthead">
     <h2>Alex Coles Portfolio</h2>
     <ul id="mast-menu">
-        <li><a id="go2-projects" href="/projects"
-            title="View the projects I've worked on.">Projects</a></li>
-        <li><a id="go2-clients"  href="/clients"
-            title="View the clients I've worked for.">Clients</a></li>
-        <li><a id="go2-blog"     href="/blog"
-            title="View my blog.">Blog</a></li>
-        <li><a id="go2-resume"   href="/resume"
-            title="My formal Resumé for download.">Resumé</a></li>
-        <li><a id="go2-contact"  href="/contact"
-            title="Information on how to get in touch with me.">Contact</a></li>
+        <li><%= link_to 'Projects', projects_path, 
+                :id => 'go2-projects',
+                :title => 'View the projects I\'ve worked on.'  %></li> 
+        <li><%= link_to 'Clients', clients_path, 
+                :id => 'go2-clients',
+                :title => 'View the clients I\'ve worked for.' %></li>
+        <li><%= link_to 'Blog', '/blog', 
+                :id => 'go2-blog',
+                :title => 'View my blog.' %></li>
+        <li><%= link_to 'Resumé', '/resume', 
+                :id => 'go2-resume',
+                :title => 'My formal Resumé for download.' %></li>
+        <li><%= link_to 'Contact', contact_path, 
+                :id => 'go2-contact',
+                :title => 'Information on how to get in touch with me.' %></li>
     </ul>
+</div>
+
+<div id="session"
+<% if logged_in? %>
+    You are logged in as <%=h current_user.login %>.
+    <%= link_to 'Logout', logout_path %>
+<% else %>
+    <%= link_to 'Login', login_path %> or
+    <%= link_to 'Sign up', signup_path %>
+<% end %>
 </div>
 
 <%= @content_for_layout %>
