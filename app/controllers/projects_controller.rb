@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
   
-  before_filter :login_required, :except => [ :index, :list, :view ]
+  before_filter :login_required, :except => [ :index, :show ]
 
   # GET /  (this is also the default route)
   # GET /projects

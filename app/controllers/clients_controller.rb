@@ -1,5 +1,7 @@
 class ClientsController < ApplicationController
   
+  before_filter :login_required, :except => [ :index, :show ]
+  
   #verify :only => [ 'show', 'edit', 'destroy' ],
   #       :params => :id,
   #       :add_flash => { :notice => 'Missing client ID.' },
