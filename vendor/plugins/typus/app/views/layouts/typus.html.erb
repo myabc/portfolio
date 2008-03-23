@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title><%= Typus::Configuration.options[:app_name] %> <%= page_title || "untitled" %></title>
+  <meta http-equiv="imagetoolbar" content="no" />
+  <%= stylesheet_link_tag "typus", :media => "screen" %>
+  <%= javascript_include_tag :defaults %>
+</head>
+
+<body>
+
+<!-- header -->
+<div id="header">
+  <div class="left">
+    <%= header %>
+    <%= breadcrumbs %>
+  </div>
+  <div class="right">
+    <%= login_info %>
+  </div>
+  <div class="clear"></div>
+</div>
+<!-- /header -->
+
+<!-- wrapper -->
+<div id="wrapper">
+  <div id="sidebar">
+    <%= yield :sidebar %>
+  </div>
+  <div id="content">
+    <%= display_flash_message %>
+    <%= yield %>
+  </div>
+</div>
+<!-- /wrapper -->
+
+<!-- footer -->
+<div id="footer">
+  <p><a href="http://intraducibles.net/projects/typus" title="Typus">Typus <%= Typus::Configuration.options[:version] %></a></p>
+</div>
+<!-- /footer -->
+
+</body>
+
+</html>
