@@ -50,13 +50,15 @@ class ProjectsController < ApplicationController
   
   # GET /projects/1;edit
   def edit
-    @project = Project.find(params[:id])
+#    @project = Project.find(params[:id])
     
     # lookups
     @media = Medium.find(:all)
     @clients = Client.find(:all, :order => "name")
     @imagesets = Imageset.find(:all)
     @images = Image.find(:all)
+
+    @project = Project.find_by_status_and_id(true, params[:id]) or raise ActiveRecord::RecordNotFound
   end
   
   # POST /projects

@@ -1,0 +1,47 @@
+TODO
+====
+
+[ ] Sort by LANGUAGES is not working.
+[ ] Translations with the Translation plugin.
+[ ] Add `preview` to images (javascript)
+[ ] If RedCloth of BlueCloth is defined add message in `text` fields.
+[ ] Salted password
+[ ] Update feedback error on empty fields.
+[ ] Update flash.
+[ ] Update CSS with something like a framework.
+[ ] Add `default_filter :active => true`.
+
+DONE
+====
+
+[X] Typus should not boot if cannot find `config/typus.yml`. (20080320)
+[X] Admin user should never be able to change itself to user. (20080310)
+[X] A user can never add himself admin privileges. (20080310)
+[X] Only Admins can add other users ... (20080310)
+[X] `will_paginate` plugin is no longer required. (20080318)
+[X] Add on README instructions on how to add messages to login and dashboard.
+[X] Add on README instructions on how to add messages to views (index_top, edit_top, new_top)
+[X] Add custom lists for externals.
+[X] Sort by Collection is not working. (sort_by=category&sort_order=asc)
+[X] Sidebar filters should read current filters.
+[X] Dashboard listings should show groups.
+[X] "More Actions" should be only be shown when they exist.
+[X] Write tests.
+[X] Don't show sidebar filters if doesn't exist. (Categories ...)
+[X] Refactor TypusController.
+[X] Update searches ... a "nice" way of set default order.
+[X] Merge params on table headers.
+[X] Add more and more tests ...
+[X] eval "languages".upcase
+[X] Related? This relationship should be changed.
+[X] Add Actions params ( :params => params.merge(...) )
+[X] Fix problems with the selectors of %w( item1 item2 item3 item4 )
+[X] Items can add external items.
+[X] Add -Multipart- to forms.
+[X] Actions/Tasks ... now Typus can handle external controllers ...
+[X] After installing Typus generate TypusExtrasController (inherits from TypusController)
+[X] External actions (typus_extras_controller.rb)
+[X] Toggle status ...
+[X] Check if `will_paginate` exists, otherwise, install it.
+[X] Don't show `will_paginate` message.
+[X] When generation `typus.yml` file, add also the form fields.

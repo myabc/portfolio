@@ -45,4 +45,16 @@ class ApplicationController < ActionController::Base
   #  redirect_to home_url
   #end
 
+  helper :all # include all helpers, all the time
+
+  # See ActionController::RequestForgeryProtection for details
+  # Uncomment the :secret if you're not using the cookie session store
+  protect_from_forgery # :secret => 'e40a92944ddebc675baab382b4bbf9f2'
+
+  before_filter :set_workspace
+
+  def set_workspace
+    @pages = Page.list_published
+  end
+
 end

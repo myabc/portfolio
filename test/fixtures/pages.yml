@@ -1,0 +1,20 @@
+about:
+  title: About
+  slug: about
+  body: About Page
+  status: true
+  position: 1
+
+privacy:
+  title: Privacy
+  slug: privacy
+  body: Privacy Page
+  status: true
+  position: 2
+
+unpublished:
+  title: Unpublished
+  slug: unpublished
+  body: Unpublished
+  status: false
+  position: 3

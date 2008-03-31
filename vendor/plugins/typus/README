@@ -1,0 +1,131 @@
+Typus
+=====
+
+Rails Plugin to create a basic and default admin interface.
+
+Once installed and configured you can login at http://0.0.0.0:3000/admin/
+
+## Installing
+
+You can install some extra plugins using:
+
+    rake typus:dependencies
+
+This task will install for you `will_paginate`, `attachment_fu`, `acts_as_list`
+and `acts_as_tree`.
+
+Install the admin interface stylesheets.
+
+    rake typus:assets
+
+Create an initial configuration file at `config/typus.yml`
+
+    rake typus:configure
+
+And finally create the needed tables on the database by running.
+
+    script/generate typus_migration
+    rake db:migrate
+    rake typus:create_user email='youremail@yourdomain.com' RAILS_ENV=production
+
+You can view the available tasks running
+
+    rake typus
+
+## Typus::Configuration options
+
+You can overwriting the following settings:
+
+    Typus::Configuration.options[:app_name] = "Your app name"
+    Typus::Configuration.options[:app_description] = "App Details"
+    Typus::Configuration.options[:per_page] = "20"
+
+Place this settings in a initializer at <code>config/initializers/typus.rb</code>.
+
+## Configuration file options
+
+If the configuration file is broken you'll see a +typus.yml+ text on the admin interface.
+
+### Typus Fields
+
+    fields:
+      list: name, created_at, category_id, status
+      form: name, body, created_at, status
+
+If you want to be able to upload data to your application add `uploaded_data` to form.
+
+(Upload will only work with `attachment_fu`)
+
+### External Forms
+
+    externals: category_id
+
+### Filters
+
+    filters: status author_id created_at
+
+### Order
+
+    order_by: attribute1
+
+NOTE: <code>order_by</code> only accepts one field.
+
+### Searches
+
+    search: attribute1, attribute2
+
+### Want more actions?
+
+    actions:
+      list: notify_all
+      form: notify
+
+These actions will only be available on the context +list+ and +form+ of Typus.
+
+Run the following task to create the `TypusExtras` controller.
+
+    rake typus:extra_actions
+
+### Module
+
+Used to group models on the main screen.
+
+    module: Site
+
+## Customize Interface
+
+You can customize the interface by placing on `views/typus` the following files.
+
+### Dashboard
+
+- `_dashboard_sidebar.html.erb`
+- `_dashboard_top.html.erb`
+- `_dashboard_bottom.html.erb`
+
+### Models
+
+- `MODEL/_index_top.html.erb`
+- `MODEL/_index_bottom.html.erb`
+- `MODEL/_new_top.html.erb`
+- `MODEL/_new_bottom.html.erb`
+- `MODEL/_new_bottom.html.erb`
+- `MODEL/_new_sidebar.html.erb`
+- `MODEL/_edit_top.html.erb`
+- `MODEL/_edit_bottom.html.erb`
+- `MODEL/_edit_bottom.html.erb`
+- `MODEL/_edit_sidebar.html.erb`
+
+## Acknowledgments
+
+- Isaac Feliu - http://railslab.net
+- Jaime Iniesta - http://railes.net
+
+== Author, contact & bugs
+
+You can contact me at <fesplugas@intraducibles.net>
+
+REPORT BUGS on Trac: http://dev.intraducibles.net/trac/typus
+
+BROWSE SOURCE on SVN: http://dev.intraducibles.net/svn/rails/plugins/typus
+
+Copyright (c) 2007-2008 Francesc Esplugas Marti, released under the MIT license

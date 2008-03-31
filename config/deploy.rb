@@ -1,23 +1,20 @@
-require 'erb'
-#require 'config/shared_accelerator/accelerator_tasks'
+set :application, "portfolio.com"
 
-set :application, "portfolio"
-set :domain, "alexcolesportfolio.com"
-set :user, "alexbcoles"
-set :repository,  "http://www.#{domain}/svn/#{application}/trunk"
-set :use_sudo, false
-set :deploy_to, "/home/alexbcoles/sites/#{application}"
-set :mongrel_port, 4036
+set :repository,  "git://github.com/fesplugas/portfolio.git"
 
-# If you aren't using Subversion to manage your source code, specify
-# your SCM below:
-set :scm, :subversion
+set :deploy_to, "/home/fesplugas/public_html/#{application}"
+set :scm, :git
 
-role :app, domain
-role :web, domain
-role :db,  domain, :primary => true
+role :app, "ordinarycode.com"
+role :web, "ordinarycode.com"
+role :db,  "ordinarycode.com", :primary => true
 
-# Example dependancies
-depend :remote, :command, :gem
-depend :remote, :gem, :mongrel, '>=1.0.1'
-depend :remote, :gem, :rake, '>=0.7'
+desc "Starts the application"
+deploy.task :start, :roles => :app do
+  run "#{deploy_to}/current/script/process/spawner -p 10500 -i 1 -e production"
+end
+
+desc "Stops the application"
+deploy.task :stop, :roles => :app do
+  run "#{deploy_to}/current/script/process/reaper -a kill"
+end

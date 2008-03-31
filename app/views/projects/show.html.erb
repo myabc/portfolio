@@ -1,5 +1,7 @@
 <div id="content-col">
 
+<h2>Project: <%= @project.name %></h2>
+
 <div id="client-trail">
 <%= link_to @project.client.name, client_path(@project.client) %>
 </div>
@@ -45,3 +47,13 @@
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back to list', projects_path %>
 
+<%= markdown(@project.description) %>
+
+
+<ul><% @project.assets.each do |asset| %>
+  <% if ( asset.filename.include? "png" ) || ( asset.filename.include? "jpeg" ) %>
+    <%= link_to image_tag(asset.public_filename), asset.public_filename %>
+  <% else %>
+    <li><%= link_to asset.filename, asset.public_filename %></li>
+  <% end %>
+<% end %></ul>

@@ -1,0 +1,8 @@
+
+<h2>Welcome to my Portfolio</h2>
+
+<p>This is my portfolio.</p>
+
+<ul><% @projects.each do |project| %>
+  <li><%= link_to project.title, project_url(project) %></li>
+<% end %></ul>

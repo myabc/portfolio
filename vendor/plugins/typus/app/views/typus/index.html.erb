@@ -1,0 +1,49 @@
+<% content_for :sidebar do %>
+  <%= typus_block("index_sidebar") || actions %>
+  <%= search %>
+  <%= filters %>
+<% end %>
+
+<h2><a href="<%= params[:model] %>"><%= params[:model].titleize %></a> <small><%= link_to "Remove filter", :action => 'index' if (request.env['QUERY_STRING'] || []).size > 0 %></small></h2>
+
+<%= typus_block("index_top") %>
+
+<div id="list">
+
+  <!-- Query -->
+  <% if params[:query] %>
+    <div class="box" id="empty">
+      <p><%= process_query(request.env['QUERY_STRING']) %>. <%= link_to "Remove filter?" %></p>
+    </div>
+  <% end %>
+  <!-- /Query -->
+
+  <% if @items.count > 0 -%>
+
+    <!-- Listing -->
+    <%= typus_table %>
+    <!-- /Listing -->
+
+    <!-- Pagination -->
+    <%= render :partial => 'pagination' if @items.prev || @items.next %>
+    <!-- /Pagination links -->
+
+  <% elsif @model.count == 0 %>
+    <!-- Shown when there are no items -->
+    <div class="box" id="empty">
+      <p>There are no <strong><%= params[:model].titleize %></strong>.</p>
+    </div>
+    <!-- /Shown when there are no items -->
+  <% else %>
+    <!-- No items under this filter -->
+    <div class="box" id="empty">
+      <p>No <strong><%= params[:model].titleize %></strong> under this filter.</p>
+    </div>
+    <!-- /No items under this filter -->
+  <% end %>
+
+</div>
+
+<%= typus_block("index_bottom") %>
+
+<script type="text/javascript">new Effect.Highlight('empty');</script>

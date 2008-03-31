@@ -1,0 +1,14 @@
+<% content_for :sidebar do %>
+  <%= typus_block("new_sidebar") || actions %>
+<% end %>
+
+<h2><%= link_to "#{params[:model].titleize}", :action => "index", :model => params[:model], :id => nil %> &rsaquo; New</h2>
+
+<%= typus_block("new_top") %>
+
+<% form_for :item, :url  => { :action => "create" }, :html => { :multipart => true } do %>
+  <%= typus_form %>
+  <p><%= submit_tag "Create #{params[:model].titleize.singularize}", :class => 'button' %></p>
+<% end %>
+
+<%= typus_block("new_bottom") %>

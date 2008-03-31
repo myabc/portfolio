@@ -11,15 +11,23 @@
 
 ActiveRecord::Schema.define(:version => 14) do
 
-  create_table "clients", :force => true do |t|
-    t.string "short_name",  :limit => 20, :default => "", :null => false
-    t.string "name",                      :default => "", :null => false
-    t.string "client_uri"
-    t.text   "description"
+  create_table "assets", :force => true do |t|
+    t.integer "parent_id"
+    t.string  "content_type"
+    t.string  "filename"
+    t.string  "thumbnail"
+    t.integer "size"
+    t.integer "width"
+    t.integer "height"
   end
 
-  add_index "clients", ["short_name"], :name => "short_name"
-  add_index "clients", ["name"], :name => "name"
+  create_table "assets_projects", :id => false, :force => true do |t|
+    t.integer "asset_id"
+    t.integer "project_id"
+  end
+
+  add_index "assets_projects", ["project_id"], :name => "index_assets_projects_on_project_id"
+  add_index "assets_projects", ["asset_id"], :name => "index_assets_projects_on_asset_id"
 
   create_table "images", :force => true do |t|
     t.string  "name",        :limit => 100, :default => "", :null => false
@@ -43,16 +51,28 @@ ActiveRecord::Schema.define(:version => 14) do
     t.string "name"
   end
 
+  create_table "pages", :force => true do |t|
+    t.string   "title"
+    t.string   "slug"
+    t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "status",     :default => false
+    t.integer  "position"
+  end
+
   create_table "projects", :force => true do |t|
-    t.string  "name",                     :default => "", :null => false
-    t.string  "uri"
-    t.date    "start_date"
-    t.date    "end_date"
-    t.text    "description"
-    t.integer "client_id",   :limit => 4, :default => 0,  :null => false
-    t.integer "media_type",  :limit => 4, :default => 0,  :null => false
-    t.integer "status",      :limit => 4, :default => 0,  :null => false
-    t.integer "medium_id"
+    t.string   "name",                     :default => "", :null => false
+    t.string   "uri"
+    t.date     "start_date"
+    t.date     "end_date"
+    t.text     "description"
+    t.integer  "client_id",   :limit => 4, :default => 0,  :null => false
+    t.integer  "media_type",  :limit => 4, :default => 0,  :null => false
+    t.integer  "status",                   :default => 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "medium_id"
   end
 
   add_index "projects", ["name"], :name => "name"
@@ -83,7 +103,7 @@ ActiveRecord::Schema.define(:version => 14) do
     t.datetime "updated_at"
   end
 
-  add_index "sessions", ["session_id"], :name => "sessions_session_id_index"
+  add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
 
   create_table "taggings", :force => true do |t|
     t.integer "tag_id"
@@ -91,13 +111,24 @@ ActiveRecord::Schema.define(:version => 14) do
     t.string  "taggable_type"
   end
 
-  add_index "taggings", ["tag_id", "taggable_id", "taggable_type"], :name => "taggings_tag_id_index"
+  add_index "taggings", ["tag_id", "taggable_id", "taggable_type"], :name => "index_taggings_on_tag_id_and_taggable_id_and_taggable_type"
 
   create_table "tags", :force => true do |t|
     t.string "name"
   end
 
-  add_index "tags", ["name"], :name => "tags_name_index"
+  add_index "tags", ["name"], :name => "index_tags_on_name"
+
+  create_table "typus_users", :force => true do |t|
+    t.string   "email"
+    t.string   "hashed_password"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.boolean  "status",          :default => false
+    t.boolean  "admin",           :default => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "login"
